@@ -1597,6 +1597,62 @@
     
 
 
+    <!-- http://dbpedia.org/resource/Germany -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Germany">
+        <owl:sameAs rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany -->
+
+    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Health_Products_Regulatory_Authority -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Health_Products_Regulatory_Authority">
+        <owl:sameAs rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA -->
+
+    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ireland -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ireland">
+        <owl:sameAs rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland -->
+
+    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Medtronic -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Medtronic">
+        <owl:sameAs rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001 -->
+
+    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001"/>
+    
+
+
     <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType -->
 
     <owl:NamedIndividual rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType">
@@ -1868,7 +1924,6 @@
         <rdfs:comment xml:lang="en">Country in Central Europe. Member State of the European Union.</rdfs:comment>
         <rdfs:label xml:lang="ca">Alemanya</rdfs:label>
         <rdfs:label xml:lang="en">Germany</rdfs:label>
-        <owl:sameAs>http://dbpedia.org/resource/Germany</owl:sameAs>
     </owl:NamedIndividual>
     
 
@@ -1880,7 +1935,6 @@
         <rdfs:comment xml:lang="en">The Health Products Regulatory Authority is the competent authority for medical devices in Ireland.</rdfs:comment>
         <rdfs:label xml:lang="ca">Autoritat Reguladora de Productes (HPRA)</rdfs:label>
         <rdfs:label xml:lang="en">Health Products Regulatory Authority (HPRA)</rdfs:label>
-        <owl:sameAs>http://dbpedia.org/resource/Health_Products_Regulatory_Authority</owl:sameAs>
     </owl:NamedIndividual>
     
 
@@ -1972,7 +2026,6 @@
         <rdfs:comment xml:lang="en">Country in Western Europe. Member State of the European Union.</rdfs:comment>
         <rdfs:label xml:lang="en">Ireland</rdfs:label>
         <rdfs:label xml:lang="ca">Irlanda</rdfs:label>
-        <owl:sameAs>http://dbpedia.org/resource/Ireland</owl:sameAs>
     </owl:NamedIndividual>
     
 
@@ -2001,7 +2054,6 @@
         <rdfs:comment xml:lang="en">Irish-American medical device company headquartered in Dublin. One of the largest medical device manufacturers in the world.</rdfs:comment>
         <rdfs:label xml:lang="ca">Medtronic plc</rdfs:label>
         <rdfs:label xml:lang="en">Medtronic plc</rdfs:label>
-        <owl:sameAs>http://dbpedia.org/resource/Medtronic</owl:sameAs>
     </owl:NamedIndividual>
     
 
