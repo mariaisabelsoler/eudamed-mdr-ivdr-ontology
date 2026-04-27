@@ -6,6 +6,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/status#bibo:"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
@@ -17,12 +18,18 @@
         <owl:versionIRI rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr/1.0.0"/>
         <dc:creator xml:lang="en">Maria Isabel Soler</dc:creator>
         <dc:description xml:lang="en">The purpose of the ontology is to model the domain of medical devices and in vitro diagnostic devices registered in the European EUDAMED database, including manufacturers, identified risks, incidents, and field safety corrective actions (FSCAs). The goal is to enable the different information systems in the sector — manufacturers, regulatory authorities, hospitals, and patients — to share data accurately, without ambiguity, and to interoperate easily with each other.</dc:description>
+        <dc:source xml:lang="en">EUDAMED public repository, https://ec.europa.eu/tools/eudamed/</dc:source>
         <dc:title xml:lang="en">EUDAMED MDR-IVDR Ontology</dc:title>
+        <terms:bibliographicCitation xml:lang="en">Soler, Maria Isabel (2026). EUDAMED MDR-IVDR Ontology. Universitat Oberta de Catalunya (UOC).</terms:bibliographicCitation>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-26</terms:created>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-27</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher xml:lang="en">Universitat Oberta de Catalunya (UOC)</terms:publisher>
+        <bibo:status xml:lang="en">Ontology Specification</bibo:status>
         <vann:preferredNamespacePrefix>eudamed</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#"/>
+        <vann:preferredNamespaceUri>http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="en">EUDAMED MDR-IVDR Ontology</rdfs:label>
+        <rdfs:label>eudamed</rdfs:label>
         <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -55,9 +62,25 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
@@ -71,9 +94,33 @@
     
 
 
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status#bibo:status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status#bibo:status">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
