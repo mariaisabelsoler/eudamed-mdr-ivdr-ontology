@@ -7,14 +7,63 @@
 @base <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#> .
 
 <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> rdf:type owl:Ontology ;
-                                                  rdfs:label "EUDAMED MDR-IVDR Ontology"@en .
+                                                  owl:versionIRI <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr/1.0.0> ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "Maria Isabel Soler"@en ;
+                                                  <http://purl.org/dc/elements/1.1/description> "The purpose of the ontology is to model the domain of medical devices and in vitro diagnostic devices registered in the European EUDAMED database, including manufacturers, identified risks, incidents, and field safety corrective actions (FSCAs). The goal is to enable the different information systems in the sector — manufacturers, regulatory authorities, hospitals, and patients — to share data accurately, without ambiguity, and to interoperate easily with each other."@en ;
+                                                  <http://purl.org/dc/elements/1.1/title> "EUDAMED MDR-IVDR Ontology"@en ;
+                                                  <http://purl.org/dc/terms/created> "2026-04-26"^^xsd:date ;
+                                                  <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                  <http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespacePrefix> "eudamed" ;
+                                                  <http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespaceUri> : ;
+                                                  rdfs:label "EUDAMED MDR-IVDR Ontology"@en ;
+                                                  owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty ;
+                                          rdfs:subPropertyOf rdfs:label .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty ;
+                                              rdfs:subPropertyOf rdfs:label .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty ;
+                                        rdfs:subPropertyOf rdfs:label .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty ;
+                                   rdfs:subPropertyOf rdfs:label .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty ;
+                                   rdfs:subPropertyOf rdfs:label .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespacePrefix> rdf:type owl:AnnotationProperty ;
+                                                                                    rdfs:subPropertyOf rdfs:label .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespaceUri> rdf:type owl:AnnotationProperty ;
+                                                                                 rdfs:subPropertyOf rdfs:label .
+
+
 ###  http://www.w3.org/2002/07/owl#sameAs
 owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf rdfs:label .
 
 
 #################################################################

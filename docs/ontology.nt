@@ -1,5 +1,14 @@
 <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr/1.0.0> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://purl.org/dc/elements/1.1/creator> "Maria Isabel Soler"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://purl.org/dc/elements/1.1/description> "The purpose of the ontology is to model the domain of medical devices and in vitro diagnostic devices registered in the European EUDAMED database, including manufacturers, identified risks, incidents, and field safety corrective actions (FSCAs). The goal is to enable the different information systems in the sector — manufacturers, regulatory authorities, hospitals, and patients — to share data accurately, without ambiguity, and to interoperate easily with each other."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://purl.org/dc/elements/1.1/title> "EUDAMED MDR-IVDR Ontology"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://purl.org/dc/terms/created> "2026-04-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespacePrefix> "eudamed" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespaceUri> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#> .
 <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED MDR-IVDR Ontology"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
 # 
 # 
 # #################################################################
@@ -9,8 +18,40 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespacePrefix> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix#vann:preferredNamespaceUri> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
 # http://www.w3.org/2002/07/owl#sameAs
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
 # 
 # 
 # 
