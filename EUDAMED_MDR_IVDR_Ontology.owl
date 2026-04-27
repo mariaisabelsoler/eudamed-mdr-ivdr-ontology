@@ -826,18 +826,55 @@
     <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#CorrectiveAction -->
 
     <owl:Class rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#CorrectiveAction">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType"/>
-                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType"/>
-                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType"/>
-                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType"/>
-                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType"/>
-                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#addressesIncident"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#status"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActionStatus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#actionDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#description"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#devicesAffected"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#eudamedFscaRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#scope"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A Field Safety Corrective Action. It is any action a manufacturer takes to reduce a risk, such as a recall, a safety alert, or a user notice.</rdfs:comment>
         <rdfs:label xml:lang="ca">Acció Correctiva (FSCA)</rdfs:label>
         <rdfs:label xml:lang="en">Corrective Action (FSCA)</rdfs:label>
@@ -968,7 +1005,77 @@
     <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Incident -->
 
     <owl:Class rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Incident">
-        <rdfs:comment xml:lang="en">An adverse event that happens with a medical device. Manufacturers must report incidents under MDR Article 87.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#countryReported"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#hasReportingEntity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ReportingEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#involvesDevice"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDevice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#correctiveActionTaken"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#description"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#detectionDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#eudamedIncidentRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#eventDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#outcome"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#reportDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An adverse event that happens with a medical device.</rdfs:comment>
         <rdfs:label xml:lang="ca">Incident</rdfs:label>
         <rdfs:label xml:lang="en">Incident</rdfs:label>
     </owl:Class>
@@ -1044,6 +1151,48 @@
 
     <owl:Class rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Manufacturer">
         <rdfs:subClassOf rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ReportingEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#hasCompetentAuthority"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#CompetentAuthority"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#hasCountry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#authorizationNumber"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#contactEmail"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#eudamedSrn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A company or person that designs and produces medical devices. Manufacturers must register their devices in EUDAMED.</rdfs:comment>
         <rdfs:label xml:lang="ca">Fabricant</rdfs:label>
         <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
@@ -1066,6 +1215,62 @@
 
     <owl:Class rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDevice">
         <rdfs:subClassOf rdf:resource="http://schema.org/MedicalDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#hasRiskClass"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RiskClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#intendedPurpose"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#isActive"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#isImplantable"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#isIvd"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#isReusable"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#udiDi"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A device used for medical purposes such as diagnosis, prevention, or treatment.</rdfs:comment>
         <rdfs:label xml:lang="ca">Dispositiu Mèdic</rdfs:label>
         <rdfs:label xml:lang="en">Medical Device</rdfs:label>
@@ -1076,6 +1281,18 @@
     <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType -->
 
     <owl:Class rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType"/>
+                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType"/>
+                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType"/>
+                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType"/>
+                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType"/>
+                    <rdf:Description rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:comment xml:lang="en">Closed enumeration of device type categories used to classify which devices a risk affects.</rdfs:comment>
         <rdfs:label xml:lang="en">Medical Device Type</rdfs:label>
         <rdfs:label xml:lang="ca">Tipus de Dispositius mèdics</rdfs:label>
@@ -1179,6 +1396,48 @@
     <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Risk -->
 
     <owl:Class rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Risk">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#category"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RiskCategory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#probability"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Probability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#severity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Severity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#description"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#imdrfCode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A possible problem related to the use of a medical device. Each risk has a type, a category, a severity, and a probability.</rdfs:comment>
         <rdfs:label xml:lang="ca">Risc</rdfs:label>
         <rdfs:label xml:lang="en">Risk</rdfs:label>
@@ -1482,6 +1741,24 @@
     
 
 
+    <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-016">
+        <rdf:type rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDevice"/>
+        <eudamed-mdr-ivdr:hasManufacturer rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-005"/>
+        <eudamed-mdr-ivdr:hasRiskClass rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ClassC"/>
+        <eudamed-mdr-ivdr:intendedPurpose>Automated immunoassay analyzer for clinical laboratory</eudamed-mdr-ivdr:intendedPurpose>
+        <eudamed-mdr-ivdr:isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</eudamed-mdr-ivdr:isActive>
+        <eudamed-mdr-ivdr:isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</eudamed-mdr-ivdr:isImplantable>
+        <eudamed-mdr-ivdr:isIvd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</eudamed-mdr-ivdr:isIvd>
+        <eudamed-mdr-ivdr:isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</eudamed-mdr-ivdr:isReusable>
+        <eudamed-mdr-ivdr:udiDi>(01)04015630001016</eudamed-mdr-ivdr:udiDi>
+        <rdfs:comment xml:lang="en">The cobas e 801 is an automated immunoassay analyzer used in clinical laboratories. It is an in vitro diagnostic device classified under the IVDR regulation. It performs immunological tests on patient samples without direct contact with the patient.</rdfs:comment>
+        <rdfs:label xml:lang="en">cobas e 801 Immunoassay Analyzer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DeviceFailure -->
 
     <owl:NamedIndividual rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DeviceFailure">
@@ -1552,6 +1829,22 @@
         <rdfs:comment xml:lang="en">Safety alert issued by Medtronic in February 2024 to all centres implanting HeartMate 3 LVAD. The alert updates the anticoagulation protocol to reduce device thrombosis risk.</rdfs:comment>
         <rdfs:label xml:lang="ca">Alerta de Seguretat per anticoagulació HeartMate 3 LVAD</rdfs:label>
         <rdfs:label xml:lang="en">Safety Alert for HeartMate 3 LVAD anticoagulation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-002">
+        <rdf:type rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Recall"/>
+        <eudamed-mdr-ivdr:addressesIncident rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001"/>
+        <eudamed-mdr-ivdr:actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-28</eudamed-mdr-ivdr:actionDate>
+        <eudamed-mdr-ivdr:closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-31</eudamed-mdr-ivdr:closureDate>
+        <eudamed-mdr-ivdr:devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1240</eudamed-mdr-ivdr:devicesAffected>
+        <eudamed-mdr-ivdr:eudamedFscaRef>EU-FSCA-2024-000002</eudamed-mdr-ivdr:eudamedFscaRef>
+        <eudamed-mdr-ivdr:scope>Micra AV lots manufactured between 2022-09 and 2023-03</eudamed-mdr-ivdr:scope>
+        <rdfs:comment xml:lang="en">Voluntary recall of Micra AV pacemaker units affected by premature battery depletion. The action was opened in February 2024 and closed in May 2024 after replacement of all affected devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">FSCA-002 Micra AV pacemaker recall</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1709,6 +2002,20 @@
         <rdfs:label xml:lang="ca">Medtronic plc</rdfs:label>
         <rdfs:label xml:lang="en">Medtronic plc</rdfs:label>
         <owl:sameAs>http://dbpedia.org/resource/Medtronic</owl:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-005">
+        <rdf:type rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Manufacturer"/>
+        <eudamed-mdr-ivdr:authorizationNumber>CH/2017/009876</eudamed-mdr-ivdr:authorizationNumber>
+        <eudamed-mdr-ivdr:contactEmail>regulatory@roche.com</eudamed-mdr-ivdr:contactEmail>
+        <eudamed-mdr-ivdr:eudamedSrn>SRN-CH-RCH-0005</eudamed-mdr-ivdr:eudamedSrn>
+        <foaf:name>Roche Diagnostics</foaf:name>
+        <rdfs:comment xml:lang="en">Roche Diagnostics is a Swiss multinational manufacturer of in vitro diagnostic devices and laboratory equipment, registered as an economic operator in EUDAMED.</rdfs:comment>
+        <rdfs:label xml:lang="en">Roche Diagnostics</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1934,6 +2241,212 @@
     <rdf:Description rdf:about="urn:swrl:var#d">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#rc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">Marks a corrective action as Closed when it has a closure date.</rdfs:comment>
+        <rdfs:label xml:lang="en">CorrectiveAction Status by closureDate</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#CorrectiveAction"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#closureDate"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#date"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#status"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                        <swrl:argument2 rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Closed"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">If a device has IVDR as regulatory framework, its risk class must be of type IVDRRiskClass.</rdfs:comment>
+        <rdfs:label xml:lang="en">IVDR enforces IVDRRiskClass</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDevice"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#hasRegulatoryFramework"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                                <swrl:argument2 rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#IVDR"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#hasRiskClass"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#rc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#IVDRRiskClass"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#rc"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">If a device has MDR as regulatory framework, its risk class must be of type MDRRiskClass.</rdfs:comment>
+        <rdfs:label xml:lang="en">MDR enforces MDRRiskClass</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDevice"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#hasRegulatoryFramework"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                                <swrl:argument2 rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MDR"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#hasRiskClass"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#rc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MDRRiskClass"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#rc"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">Classifies a device as ActiveDevice when isActive is true.</rdfs:comment>
+        <rdfs:label xml:lang="en">MedicalDevice Type by isActive</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#isActive"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDevice"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDevice"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
     <rdf:Description>
         <rdfs:comment xml:lang="en">Classifies a device as ImplantableDevice when isImplantable is true.</rdfs:comment>
         <rdfs:label xml:lang="en">MedicalDevice Type by isImplantable</rdfs:label>
@@ -2117,95 +2630,6 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDevice"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:comment xml:lang="en">Marks a corrective action as Closed when it has a closure date.</rdfs:comment>
-        <rdfs:label xml:lang="en">CorrectiveAction Status by closureDate</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#CorrectiveAction"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#closureDate"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#date"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#status"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
-                        <swrl:argument2 rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Closed"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:comment xml:lang="en">Classifies a device as ActiveDevice when isActive is true.</rdfs:comment>
-        <rdfs:label xml:lang="en">MedicalDevice Type by isActive</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#isActive"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDevice"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDevice"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
                     </rdf:Description>
                 </rdf:first>
