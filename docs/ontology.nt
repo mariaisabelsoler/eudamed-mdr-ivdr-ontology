@@ -1,0 +1,1527 @@
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED MDR-IVDR Ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#sameAs
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a corrective action to the incident that it addresses."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#label> "addresses incident"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#label> "tracta l'incident"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a risk to the types of medical devices that it can affect."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "affected device type"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "tipus de dispositiu afectat"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a risk to its general category."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category> <http://www.w3.org/2000/01/rdf-schema#label> "categoria"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category> <http://www.w3.org/2000/01/rdf-schema#label> "category"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographic area affected by a corrective action. It can be a single country or a regulatory zone."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "countries affected"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "països afectats"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> <http://www.w3.org/2000/01/rdf-schema#comment> "Country where the incident was reported."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> <http://www.w3.org/2000/01/rdf-schema#label> "country reported"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> <http://www.w3.org/2000/01/rdf-schema#label> "país on s'ha reportat"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a manufacturer to its competent authority."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "has competent authority"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "té autoritat competent"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a manufacturer to its country of registration."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "has country"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "té país"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a medical device to its manufacturer."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "té fabricant"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the EU regulation that applies to a device. It can be MDR or IVDR."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "has regulatory framework"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "té marc regulatori"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an incident to the entity that reported it."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> <http://www.w3.org/2000/01/rdf-schema#label> "has reporting entity"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> <http://www.w3.org/2000/01/rdf-schema#label> "té entitat reportadora"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a device to its regulatory risk class."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "has risk class"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "té classe de risc"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an incident to the medical device involved."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "involucra dispositiu"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "involves device"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an incident to the risks that happened in it."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk> <http://www.w3.org/2000/01/rdf-schema#label> "materialitza risc"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk> <http://www.w3.org/2000/01/rdf-schema#label> "materializes risk"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the sex of the patient involved in the incident."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> <http://www.w3.org/2000/01/rdf-schema#label> "patient sex"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> <http://www.w3.org/2000/01/rdf-schema#label> "sexe del pacient"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a risk to its probability level."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> <http://www.w3.org/2000/01/rdf-schema#label> "probabilitat"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> <http://www.w3.org/2000/01/rdf-schema#label> "probability"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a risk to its severity level."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity> <http://www.w3.org/2000/01/rdf-schema#label> "gravetat"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> <http://www.w3.org/2000/01/rdf-schema#comment> "Current status of a corrective action. It can be Open or Closed."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> <http://www.w3.org/2000/01/rdf-schema#label> "estat"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the corrective action started."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> <http://www.w3.org/2000/01/rdf-schema#label> "action date"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> <http://www.w3.org/2000/01/rdf-schema#label> "data de l'acció"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Authorization number assigned to a manufacturer."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "authorization number"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "número d'autorització"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the corrective action was closed."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> <http://www.w3.org/2000/01/rdf-schema#label> "closure date"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> <http://www.w3.org/2000/01/rdf-schema#label> "data de tancament"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Email address used to contact the manufacturer."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> <http://www.w3.org/2000/01/rdf-schema#label> "contact email"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> <http://www.w3.org/2000/01/rdf-schema#label> "correu de contacte"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#comment> "True if a corrective action was taken after the incident."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#label> "acció correctiva realitzada"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#label> "corrective action taken"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> <http://www.w3.org/2000/01/rdf-schema#comment> "Text description of the entity, such as a risk, an incident, or a corrective action."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> <http://www.w3.org/2000/01/rdf-schema#label> "descripció"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident was detected."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> <http://www.w3.org/2000/01/rdf-schema#label> "data de detecció"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> <http://www.w3.org/2000/01/rdf-schema#label> "detection date"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of devices affected by the corrective action."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "devices affected"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "dispositius afectats"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference number of the corrective action in EUDAMED."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED FSCA reference"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#label> "referència FSCA a EUDAMED"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference number of the incident in EUDAMED."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED incident reference"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#label> "referència d'incident a EUDAMED"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> <http://www.w3.org/2000/01/rdf-schema#comment> "Single Registration Number of the manufacturer in EUDAMED."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED SRN"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> <http://www.w3.org/2000/01/rdf-schema#label> "SRN d'EUDAMED"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident happened."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> <http://www.w3.org/2000/01/rdf-schema#label> "data de l'esdeveniment"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> <http://www.w3.org/2000/01/rdf-schema#label> "event date"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Code from the IMDRF (International Medical Device Regulators Forum) used to classify the risk."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "IMDRF code"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "codi IMDRF"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The use for which the manufacturer designed the device."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "intended purpose"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "ús previst"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "True if the device needs an external energy source to work."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is active"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> <http://www.w3.org/2000/01/rdf-schema#label> "és actiu"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "True if the device is implantable inside the human body."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "is implantable"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "és implantable"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> <http://www.w3.org/2000/01/rdf-schema#comment> "True if the device is for in vitro diagnostic use."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> <http://www.w3.org/2000/01/rdf-schema#label> "is IVD"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> <http://www.w3.org/2000/01/rdf-schema#label> "és IVD"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> <http://www.w3.org/2000/01/rdf-schema#comment> "True if the device can be used more than once."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "is reusable"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "és reutilitzable"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of what happened as a result of the incident."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> <http://www.w3.org/2000/01/rdf-schema#label> "outcome"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> <http://www.w3.org/2000/01/rdf-schema#label> "resultat"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of the patient involved in the incident."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "edat del pacient"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "patient age"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident was reported."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "data de report"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "report date"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the scope of the corrective action, such as the affected lots or models."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> <http://www.w3.org/2000/01/rdf-schema#label> "abast"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique Device Identifier - Device Identifier. It is the unique code of a medical device under MDR."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> <http://www.w3.org/2000/01/rdf-schema#label> "UDI-DI"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> <http://www.w3.org/2000/01/rdf-schema#label> "UDI-DI"@en .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Country
+<http://schema.org/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/MedicalDevice
+<http://schema.org/MedicalDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#oneOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Status of a corrective action. The possible values are Open or Closed."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Action Status"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Estat de l'Acció"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device that needs an electrical source or another type of energy to work."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Active Device"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Dispositiu Actiu"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "The national authority in each EU country responsible for medical device regulation."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Autoritat Competent"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Competent Authority"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ContaminationRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ContaminationRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk that the device or the patient gets contaminated."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Contamination Risk"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc de Contaminació"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#oneOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A Field Safety Corrective Action. It is any action a manufacturer takes to reduce a risk, such as a recall, a safety alert, or a user notice."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Acció Correctiva (FSCA)"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Corrective Action (FSCA)"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Country> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A country, used to identify where manufacturers are registered or where incidents are reported."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> <http://www.w3.org/2000/01/rdf-schema#label> "País"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CybersecurityRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CybersecurityRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of unauthorized access or attacks on connected medical devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Cybersecurity Risk"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc de Ciberseguretat"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of wrong diagnostic results, such as false positives or false negatives."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Risk"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc Diagnòstic"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> <http://www.w3.org/2000/01/rdf-schema#comment> "A general class for geographic areas. It includes both single countries and regulatory zones."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> <http://www.w3.org/2000/01/rdf-schema#label> "Geographic Scope"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> <http://www.w3.org/2000/01/rdf-schema#label> "Àmbit Geogràfic"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#oneOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk class for in vitro diagnostic devices under IVDR. The possible values are A, B, C, or D."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Classe de Risc IVDR"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "IVDR Risk Class"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that is both implantable and active. For example, a pacemaker."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Dispositiu Actiu Implantable"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Active Device"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device that is placed inside the human body and stays there after the procedure."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Dispositiu Implantable"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Device"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "A corrective action done on devices that are already in use, without removing them from the market."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "Correcció In Situ"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "In-Situ Correction"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device used to analyse samples from the human body, such as blood or urine."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Dispositiu de Diagnòstic In Vitro"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "An adverse event that happens with a medical device. Manufacturers must report incidents under MDR Article 87."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InfectionRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InfectionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of infection due to contamination or poor sterilization of the device."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Infection Risk"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc d'Infecció"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of physical harm to the patient caused by the device."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Injury Risk"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc de Lesió"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InterferenceRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InterferenceRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk that the device gets disturbed by other devices, or that it disturbs other devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Interference Risk"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc d'Interferència"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#oneOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk class for devices under MDR. The possible values are I, IIa, IIb, or III."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Classe de Risc MDR"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "MDR Risk Class"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MalfunctionRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MalfunctionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk that the device fails or stops working correctly."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Malfunction Risk"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc de mal funcionament"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "A company or person that designs and produces medical devices. Manufacturers must register their devices in EUDAMED."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Fabricant"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MaterialRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MaterialRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk caused by the materials used in the device, such as toxicity or wear."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Material Risk"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc de Materials"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device used for medical purposes such as diagnosis, prevention, or treatment."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Dispositiu Mèdic"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Device"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that did not cause harm, but that could have been a serious incident."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Near-Miss Incident"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Quasi-Incident"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#oneOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> <http://www.w3.org/2000/01/rdf-schema#comment> "How likely a risk is to happen. The possible values are Low, Medium, or High."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> <http://www.w3.org/2000/01/rdf-schema#label> "Probabilitat"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> <http://www.w3.org/2000/01/rdf-schema#label> "Probability"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RadiationRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RadiationRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RadiationRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RadiationRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk caused by radiation that comes from the device."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RadiationRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation Risk"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RadiationRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc de Radiació"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "A corrective action where the affected devices are removed from the market."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Retirada del Mercat"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#oneOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "The European regulation that controls a medical device. It can be MDR or IVDR."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "Marc Regulatori"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "Regulatory Framework"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of countries where a corrective action applies. For example, EU-wide or EU-wide plus UK."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> <http://www.w3.org/2000/01/rdf-schema#label> "Regulatory Zone"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zona Regulatòria"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent that can report medical device incidents. It can be a manufacturer, an authority, a healthcare professional, or a patient."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entitat Reportadora"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Reporting Entity"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "A possible problem related to the use of a medical device. Each risk has a type, a category, a severity, and a probability."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#oneOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "General classification of a risk. It can be device failure, patient harm, performance, safety, diagnostic error, or product quality."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Categoria de Risc"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Category"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Regulatory class of a medical device by risk level. It is defined by MDR (I, IIa, IIb, III) or by IVDR (A, B, C, D)."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Classe de Risc"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Class"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "A message sent to users about a safety problem with a device."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Alerta de Seguretat"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SelfTestDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SelfTestDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "An in vitro diagnostic device that people can use at home, without medical staff."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Dispositiu d'Autodiagnòstic"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Self-Test Device"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An incident that caused or could cause death or serious health problems."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident Greu"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Serious Incident"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#oneOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> <http://www.w3.org/2000/01/rdf-schema#comment> "Level of how serious a risk is. The possible values are Critical, Serious, or Moderate."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> <http://www.w3.org/2000/01/rdf-schema#label> "Gravetat"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> <http://www.w3.org/2000/01/rdf-schema#label> "Severity"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#oneOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> <http://www.w3.org/2000/01/rdf-schema#comment> "Sex of a patient involved in an incident. The possible values are Male or Female."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> <http://www.w3.org/2000/01/rdf-schema#label> "Sex"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> <http://www.w3.org/2000/01/rdf-schema#label> "Sexe"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device used only once on a single patient. Implantable devices are also single-use."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Dispositiu d'un Sol Ús"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Single-Use Device"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SoftwareRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SoftwareRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk caused by errors or bugs in the device software."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Risc de Programari"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Software Risk"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "A notice sent to users with instructions on how to use or limit the device."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "Avís a Usuaris"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "User Notice"@en .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Closed enumeration of device type categories used to classify which devices a risk affects."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Device Type"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipus de Dispositius mèdics"@ca .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA> <http://www.w3.org/2000/01/rdf-schema#comment> "IVDR risk class A. Lowest risk for in vitro diagnostic devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA> <http://www.w3.org/2000/01/rdf-schema#label> "Class A"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA> <http://www.w3.org/2000/01/rdf-schema#label> "Classe A"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB> <http://www.w3.org/2000/01/rdf-schema#comment> "IVDR risk class B. Low to moderate risk for in vitro diagnostic devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB> <http://www.w3.org/2000/01/rdf-schema#label> "Class B"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB> <http://www.w3.org/2000/01/rdf-schema#label> "Classe B"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC> <http://www.w3.org/2000/01/rdf-schema#comment> "IVDR risk class C. Moderate to high risk for in vitro diagnostic devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC> <http://www.w3.org/2000/01/rdf-schema#label> "Class C"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC> <http://www.w3.org/2000/01/rdf-schema#label> "Classe C"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD> <http://www.w3.org/2000/01/rdf-schema#comment> "IVDR risk class D. Highest risk for in vitro diagnostic devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD> <http://www.w3.org/2000/01/rdf-schema#label> "Class D"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD> <http://www.w3.org/2000/01/rdf-schema#label> "Classe D"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI> <http://www.w3.org/2000/01/rdf-schema#comment> "MDR risk class I. Lowest risk for medical devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI> <http://www.w3.org/2000/01/rdf-schema#label> "Class I"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI> <http://www.w3.org/2000/01/rdf-schema#label> "Classe I"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "MDR risk class III. Highest risk for medical devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "Class III"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "Classe III"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "MDR risk class IIa. Low to moderate risk for medical devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIa"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "Classe IIa"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "MDR risk class IIb. Moderate to high risk for medical devices."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIb"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "Classe IIb"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed> <http://www.w3.org/2000/01/rdf-schema#comment> "The corrective action has been completed."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed> <http://www.w3.org/2000/01/rdf-schema#label> "Closed"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed> <http://www.w3.org/2000/01/rdf-schema#label> "Tancat"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> <http://www.w3.org/2000/01/rdf-schema#comment> "Critical level of severity. The risk can cause death or very serious harm."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> <http://www.w3.org/2000/01/rdf-schema#label> "Critical"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> <http://www.w3.org/2000/01/rdf-schema#label> "Crític"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category related to the device failing or stopping to work."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#label> "Device Failure"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#label> "Fallada del Dispositiu"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category related to the performance of the device."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance> <http://www.w3.org/2000/01/rdf-schema#label> "Device Performance"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance> <http://www.w3.org/2000/01/rdf-schema#label> "Rendiment del Dispositiu"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category related to the general safety of the device."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety> <http://www.w3.org/2000/01/rdf-schema#label> "Device Safety"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety> <http://www.w3.org/2000/01/rdf-schema#label> "Seguretat del Dispositiu"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category related to wrong diagnostic results."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Error"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError> <http://www.w3.org/2000/01/rdf-schema#label> "Error de Diagnòstic"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female> <http://www.w3.org/2000/01/rdf-schema#comment> "Female patient."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female> <http://www.w3.org/2000/01/rdf-schema#label> "Dona"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female> <http://www.w3.org/2000/01/rdf-schema#label> "Female"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High> <http://www.w3.org/2000/01/rdf-schema#comment> "High probability that the risk happens."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High> <http://www.w3.org/2000/01/rdf-schema#label> "Alta"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High> <http://www.w3.org/2000/01/rdf-schema#label> "High"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR> <http://www.w3.org/2000/01/rdf-schema#comment> "In Vitro Diagnostic Regulation (EU) 2017/746."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR> <http://www.w3.org/2000/01/rdf-schema#label> "IVDR"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR> <http://www.w3.org/2000/01/rdf-schema#label> "IVDR"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> <http://www.w3.org/2000/01/rdf-schema#comment> "Low probability that the risk happens."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> <http://www.w3.org/2000/01/rdf-schema#label> "Baixa"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> <http://www.w3.org/2000/01/rdf-schema#label> "Low"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical Device Regulation (EU) 2017/745."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> <http://www.w3.org/2000/01/rdf-schema#label> "MDR"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> <http://www.w3.org/2000/01/rdf-schema#label> "MDR"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> <http://www.w3.org/2000/01/rdf-schema#comment> "Male patient."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> <http://www.w3.org/2000/01/rdf-schema#label> "Home"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> <http://www.w3.org/2000/01/rdf-schema#label> "Male"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium probability that the risk happens."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium> <http://www.w3.org/2000/01/rdf-schema#label> "Medium"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium> <http://www.w3.org/2000/01/rdf-schema#label> "Mitjana"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate> <http://www.w3.org/2000/01/rdf-schema#comment> "Moderate level of severity. The risk can cause limited harm to the patient."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate> <http://www.w3.org/2000/01/rdf-schema#label> "Moderat"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate> <http://www.w3.org/2000/01/rdf-schema#label> "Moderate"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> <http://www.w3.org/2000/01/rdf-schema#comment> "The corrective action is still in progress."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> <http://www.w3.org/2000/01/rdf-schema#label> "Obert"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> <http://www.w3.org/2000/01/rdf-schema#label> "Open"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category related to physical harm to the patient."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> <http://www.w3.org/2000/01/rdf-schema#label> "Dany al Pacient"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> <http://www.w3.org/2000/01/rdf-schema#label> "Patient Harm"@en .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category related to the quality of the product."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Product Quality"@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Qualitat del Producte"@ca .
+# 
+# http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious level of severity. The risk can cause important harm to the patient."@en .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious> <http://www.w3.org/2000/01/rdf-schema#label> "Greu"@ca .
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious> <http://www.w3.org/2000/01/rdf-schema#label> "Serious"@en .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of medical devices that need an external energy source to work, such as imaging or monitoring equipment."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Active Device Type"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipus Dispositiu Actiu"@ca .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> "Ventricular assist device for end-stage heart failure" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> "(01)00380740009095" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://xmlns.com/foaf/0.1/name> "HeartMate 3 LVAD" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Left ventricular assist device used for end-stage heart failure. It is a centrifugal-flow pump that supports cardiac function in patients waiting for a heart transplant or as a long-term solution."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@ca .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@en .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#EUWide
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#EUWide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#EUWide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#EUWide> <http://www.w3.org/2000/01/rdf-schema#comment> "Regulatory zone covering all the European Union member states."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#EUWide> <http://www.w3.org/2000/01/rdf-schema#label> "EU-wide"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#EUWide> <http://www.w3.org/2000/01/rdf-schema#label> "Tota la UE"@ca .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#EUWide> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> "2024-02-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0." .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> "850"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> "EU-FSCA-2024-000001" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> "All HeartMate 3 LVAD units implanted since 2020" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety alert issued by Medtronic in February 2024 to all centres implanting HeartMate 3 LVAD. The alert updates the anticoagulation protocol to reduce device thrombosis risk."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#label> "Alerta de Seguretat per anticoagulació HeartMate 3 LVAD"@ca .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert for HeartMate 3 LVAD anticoagulation"@en .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany> <http://www.w3.org/2000/01/rdf-schema#comment> "Country in Central Europe. Member State of the European Union."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany> <http://www.w3.org/2000/01/rdf-schema#label> "Alemanya"@ca .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany> <http://www.w3.org/2000/01/rdf-schema#label> "Germany"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany> <http://www.w3.org/2002/07/owl#sameAs> "http://dbpedia.org/resource/Germany" .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA> <http://www.w3.org/2000/01/rdf-schema#comment> "The Health Products Regulatory Authority is the competent authority for medical devices in Ireland."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA> <http://www.w3.org/2000/01/rdf-schema#label> "Autoritat Reguladora de Productes (HPRA)"@ca .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA> <http://www.w3.org/2000/01/rdf-schema#label> "Health Products Regulatory Authority (HPRA)"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA> <http://www.w3.org/2002/07/owl#sameAs> "http://dbpedia.org/resource/Health_Products_Regulatory_Authority" .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography." .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> "2024-01-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> "EU-INC-2024-000001" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> "2024-01-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> "Serious patient injury - embolic stroke" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> "58"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> "2024-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious incident reported in Germany in January 2024. A patient implanted with a HeartMate 3 LVAD developed an ischemic stroke six months after implantation. Device thrombus was confirmed by echocardiography."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "Incident d'ictus amb HeartMate 3 LVAD."@ca .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "Stroke incident with HeartMate 3 LVAD."@en .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of medical devices that are both implantable and active, such as pacemakers or ventricular assist devices."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Active Device Type"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipus Dispositiu Actiu Implantable"@ca .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of medical devices that are placed inside the human body and stay there after the procedure, such as joint replacements or heart valves."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Device Type"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipus Dispositiu Implantable"@ca .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of medical devices used to analyse samples from the human body, such as blood, urine, or tissue."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device Type"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipus Dispositiu de Diagnòstic In Vitro"@ca .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland> <http://www.w3.org/2000/01/rdf-schema#comment> "Country in Western Europe. Member State of the European Union."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland> <http://www.w3.org/2000/01/rdf-schema#label> "Ireland"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland> <http://www.w3.org/2000/01/rdf-schema#label> "Irlanda"@ca .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland> <http://www.w3.org/2002/07/owl#sameAs> "http://dbpedia.org/resource/Ireland" .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> "IE/2017/001234" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> "regulatory@medtronic.com" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> "SRN-IE-MED-0001" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://xmlns.com/foaf/0.1/name> "Medtronic plc" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Irish-American medical device company headquartered in Dublin. One of the largest medical device manufacturers in the world."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@ca .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001> <http://www.w3.org/2002/07/owl#sameAs> "http://dbpedia.org/resource/Medtronic" .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> "Thrombus formation on device surface causing embolic events" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> "A0201" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://xmlns.com/foaf/0.1/name> "Thrombosis - device-related" .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of thrombus formation on the device surface, which can cause embolic events such as stroke. Critical for implantable cardiovascular devices."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.w3.org/2000/01/rdf-schema#label> "Thrombosis - device-related"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003> <http://www.w3.org/2000/01/rdf-schema#label> "Trombosi relacionada amb el dispositiu"@ca .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of in vitro diagnostic devices that people can use at home, without medical staff, such as glucose monitors."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Self-Test Device Type"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipus Dispositiu d'Autodiagnòstic"@ca .
+# 
+# http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType> .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of medical devices used only once on a single patient, such as drug-eluting balloons or disposable instruments."@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Single-Use Device Type"@en .
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipus Dispositiu d'un Sol Ús"@ca .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid54 <http://www.w3.org/2002/07/owl#members> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid59 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid64 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid69 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid72 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid76 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid83 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid86 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid90 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid93 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid100 <http://www.w3.org/2000/01/rdf-schema#comment> "Marks a corrective action as Closed when it has a closure date."@en .
+_:genid100 <http://www.w3.org/2000/01/rdf-schema#label> "CorrectiveAction Status by closureDate"@en .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid100 <http://www.w3.org/2003/11/swrl#body> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid102 .
+_:genid102 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#date> .
+_:genid102 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid102 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid104 .
+_:genid104 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid104 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid100 <http://www.w3.org/2003/11/swrl#head> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid106 .
+_:genid106 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed> .
+_:genid106 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid106 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid107 <http://www.w3.org/2000/01/rdf-schema#comment> "Assigns MDR regulatory framework to devices that are not in vitro diagnostic."@en .
+_:genid107 <http://www.w3.org/2000/01/rdf-schema#label> "MedicalDevice RegulatoryFramework by isIvd"@en .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid107 <http://www.w3.org/2003/11/swrl#body> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid109 .
+_:genid109 <http://www.w3.org/2003/11/swrl#argument2> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid109 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid109 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid111 .
+_:genid111 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid111 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid107 <http://www.w3.org/2003/11/swrl#head> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid113 .
+_:genid113 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> .
+_:genid113 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid113 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid114 <http://www.w3.org/2000/01/rdf-schema#comment> "Classifies a device as SingleUseDevice when isReusable is false."@en .
+_:genid114 <http://www.w3.org/2000/01/rdf-schema#label> "MedicalDevice Type by isReusable"@en .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid114 <http://www.w3.org/2003/11/swrl#body> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid116 .
+_:genid116 <http://www.w3.org/2003/11/swrl#argument2> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid116 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid116 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid118 .
+_:genid118 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid118 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid114 <http://www.w3.org/2003/11/swrl#head> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid120 .
+_:genid120 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid120 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid121 <http://www.w3.org/2000/01/rdf-schema#comment> "Classifies a device as ActiveDevice when isActive is true."@en .
+_:genid121 <http://www.w3.org/2000/01/rdf-schema#label> "MedicalDevice Type by isActive"@en .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid121 <http://www.w3.org/2003/11/swrl#body> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid123 .
+_:genid123 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid123 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid123 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid125 .
+_:genid125 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid125 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid121 <http://www.w3.org/2003/11/swrl#head> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid127 .
+_:genid127 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid127 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid128 <http://www.w3.org/2000/01/rdf-schema#comment> "Classifies a device as ImplantableDevice when isImplantable is true."@en .
+_:genid128 <http://www.w3.org/2000/01/rdf-schema#label> "MedicalDevice Type by isImplantable"@en .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid128 <http://www.w3.org/2003/11/swrl#body> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid130 .
+_:genid130 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid130 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid130 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid132 .
+_:genid132 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid132 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid128 <http://www.w3.org/2003/11/swrl#head> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid134 .
+_:genid134 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid134 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid135 <http://www.w3.org/2000/01/rdf-schema#comment> "Classifies a device as InVitroDiagnosticDevice and assigns IVDR regulatory framework when isIvd is true."@en .
+_:genid135 <http://www.w3.org/2000/01/rdf-schema#label> "MedicalDevice Type and RegulatoryFramework by isIvd"@en .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid135 <http://www.w3.org/2003/11/swrl#body> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid137 .
+_:genid137 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid137 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid137 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid139 .
+_:genid139 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid139 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid135 <http://www.w3.org/2003/11/swrl#head> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid141 .
+_:genid141 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR> .
+_:genid141 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid141 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid143 .
+_:genid143 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid143 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

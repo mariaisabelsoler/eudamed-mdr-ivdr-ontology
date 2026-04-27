@@ -1,0 +1,2752 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "ca", "undefined" ],
+    "baseIris" : [ "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1" ],
+    "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+    "labels" : {
+      "en" : "EUDAMED MDR-IVDR Ontology"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InterferenceRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterferenceRisk",
+      "en" : "Interference Risk",
+      "ca" : "Risc d'Interferència"
+    },
+    "comment" : {
+      "en" : "Risk that the device gets disturbed by other devices, or that it disturbs other devices."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegulatoryFramework",
+      "en" : "Regulatory Framework",
+      "ca" : "Marc Regulatori"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Medical Device Regulation (EU) 2017/745."
+      },
+      "labels" : {
+        "IRI-based" : "MDR",
+        "en" : "MDR",
+        "ca" : "MDR"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "In Vitro Diagnostic Regulation (EU) 2017/746."
+      },
+      "labels" : {
+        "IRI-based" : "IVDR",
+        "en" : "IVDR",
+        "ca" : "IVDR"
+      }
+    } ],
+    "comment" : {
+      "en" : "The European regulation that controls a medical device. It can be MDR or IVDR."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingleUseDevice",
+      "en" : "Single-Use Device",
+      "ca" : "Dispositiu d'un Sol Ús"
+    },
+    "subClasses" : [ "24" ],
+    "comment" : {
+      "en" : "A medical device used only once on a single patient. Implantable devices are also single-use."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CybersecurityRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CybersecurityRisk",
+      "en" : "Cybersecurity Risk",
+      "ca" : "Risc de Ciberseguretat"
+    },
+    "comment" : {
+      "en" : "Risk of unauthorized access or attacks on connected medical devices."
+    },
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection",
+      "en" : "In-Situ Correction",
+      "ca" : "Correcció In Situ"
+    },
+    "comment" : {
+      "en" : "A corrective action done on devices that are already in use, without removing them from the market."
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalDevice",
+      "en" : "Medical Device",
+      "ca" : "Dispositiu Mèdic"
+    },
+    "subClasses" : [ "35", "36", "37", "23" ],
+    "comment" : {
+      "en" : "A device used for medical purposes such as diagnosis, prevention, or treatment."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer",
+      "ca" : "Fabricant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Medtronic",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Irish-American medical device company headquartered in Dublin. One of the largest medical device manufacturers in the world."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-001",
+        "en" : "Medtronic plc",
+        "ca" : "Medtronic plc"
+      }
+    } ],
+    "comment" : {
+      "en" : "A company or person that designs and produces medical devices. Manufacturers must register their devices in EUDAMED."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall",
+      "en" : "Recall",
+      "ca" : "Retirada del Mercat"
+    },
+    "comment" : {
+      "en" : "A corrective action where the affected devices are removed from the market."
+    },
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://schema.org/MedicalDevice",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalDevice"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "33", "12", "5" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "en" : "Corrective Action (FSCA)",
+      "ca" : "Acció Correctiva (FSCA)"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices used only once on a single patient, such as drug-eluting balloons or disposable instruments."
+      },
+      "labels" : {
+        "IRI-based" : "SingleUseDeviceType",
+        "en" : "Single-Use Device Type",
+        "ca" : "Tipus Dispositiu d'un Sol Ús"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of in vitro diagnostic devices that people can use at home, without medical staff, such as glucose monitors."
+      },
+      "labels" : {
+        "IRI-based" : "SelfTestDeviceType",
+        "en" : "Self-Test Device Type",
+        "ca" : "Tipus Dispositiu d'Autodiagnòstic"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices used to analyse samples from the human body, such as blood, urine, or tissue."
+      },
+      "labels" : {
+        "IRI-based" : "InVitroDiagnosticDeviceType",
+        "en" : "In Vitro Diagnostic Device Type",
+        "ca" : "Tipus Dispositiu de Diagnòstic In Vitro"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices that are placed inside the human body and stay there after the procedure, such as joint replacements or heart valves."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableDeviceType",
+        "en" : "Implantable Device Type",
+        "ca" : "Tipus Dispositiu Implantable"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices that need an external energy source to work, such as imaging or monitoring equipment."
+      },
+      "labels" : {
+        "IRI-based" : "ActiveDeviceType",
+        "en" : "Active Device Type",
+        "ca" : "Tipus Dispositiu Actiu"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices that are both implantable and active, such as pacemakers or ventricular assist devices."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableActiveDeviceType",
+        "en" : "Implantable Active Device Type",
+        "ca" : "Tipus Dispositiu Actiu Implantable"
+      }
+    } ],
+    "subClasses" : [ "64", "32", "38", "65" ],
+    "comment" : {
+      "en" : "A Field Safety Corrective Action. It is any action a manufacturer takes to reduce a risk, such as a recall, a safety alert, or a user notice."
+    },
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country",
+      "ca" : "País"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Ireland",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Country in Western Europe. Member State of the European Union."
+      },
+      "labels" : {
+        "IRI-based" : "Ireland",
+        "en" : "Ireland",
+        "ca" : "Irlanda"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Germany",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Country in Central Europe. Member State of the European Union."
+      },
+      "labels" : {
+        "IRI-based" : "Germany",
+        "en" : "Germany",
+        "ca" : "Alemanya"
+      }
+    } ],
+    "comment" : {
+      "en" : "A country, used to identify where manufacturers are registered or where incidents are reported."
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "62", "57" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeographicScope",
+      "en" : "Geographic Scope",
+      "ca" : "Àmbit Geogràfic"
+    },
+    "subClasses" : [ "3", "56" ],
+    "comment" : {
+      "en" : "A general class for geographic areas. It includes both single countries and regulatory zones."
+    },
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RadiationRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RadiationRisk",
+      "en" : "Radiation Risk",
+      "ca" : "Risc de Radiació"
+    },
+    "comment" : {
+      "en" : "Risk caused by radiation that comes from the device."
+    },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Probability",
+      "en" : "Probability",
+      "ca" : "Probabilitat"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "High probability that the risk happens."
+      },
+      "labels" : {
+        "IRI-based" : "High",
+        "en" : "High",
+        "ca" : "Alta"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Medium probability that the risk happens."
+      },
+      "labels" : {
+        "IRI-based" : "Medium",
+        "en" : "Medium",
+        "ca" : "Mitjana"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Low probability that the risk happens."
+      },
+      "labels" : {
+        "IRI-based" : "Low",
+        "en" : "Low",
+        "ca" : "Baixa"
+      }
+    } ],
+    "comment" : {
+      "en" : "How likely a risk is to happen. The possible values are Low, Medium, or High."
+    },
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "Serious Incident",
+      "ca" : "Incident Greu"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Serious incident reported in Germany in January 2024. A patient implanted with a HeartMate 3 LVAD developed an ischemic stroke six months after implantation. Device thrombus was confirmed by echocardiography."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "en" : "Stroke incident with HeartMate 3 LVAD.",
+        "ca" : "Incident d'ictus amb HeartMate 3 LVAD."
+      }
+    } ],
+    "comment" : {
+      "en" : "An incident that caused or could cause death or serious health problems."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserNotice",
+      "en" : "User Notice",
+      "ca" : "Avís a Usuaris"
+    },
+    "comment" : {
+      "en" : "A notice sent to users with instructions on how to use or limit the device."
+    },
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosticRisk",
+      "en" : "Diagnostic Risk",
+      "ca" : "Risc Diagnòstic"
+    },
+    "comment" : {
+      "en" : "Risk of wrong diagnostic results, such as false positives or false negatives."
+    },
+    "attributes" : [ "external" ],
+    "id" : "82",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionStatus",
+      "en" : "Action Status",
+      "ca" : "Estat de l'Acció"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "The corrective action has been completed."
+      },
+      "labels" : {
+        "IRI-based" : "Closed",
+        "en" : "Closed",
+        "ca" : "Tancat"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "The corrective action is still in progress."
+      },
+      "labels" : {
+        "IRI-based" : "Open",
+        "en" : "Open",
+        "ca" : "Obert"
+      }
+    } ],
+    "comment" : {
+      "en" : "Status of a corrective action. The possible values are Open or Closed."
+    },
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType",
+    "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalDeviceType",
+      "en" : "Medical Device Type",
+      "ca" : "Tipus de Dispositius mèdics"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices used only once on a single patient, such as drug-eluting balloons or disposable instruments."
+      },
+      "labels" : {
+        "IRI-based" : "SingleUseDeviceType",
+        "en" : "Single-Use Device Type",
+        "ca" : "Tipus Dispositiu d'un Sol Ús"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of in vitro diagnostic devices that people can use at home, without medical staff, such as glucose monitors."
+      },
+      "labels" : {
+        "IRI-based" : "SelfTestDeviceType",
+        "en" : "Self-Test Device Type",
+        "ca" : "Tipus Dispositiu d'Autodiagnòstic"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices used to analyse samples from the human body, such as blood, urine, or tissue."
+      },
+      "labels" : {
+        "IRI-based" : "InVitroDiagnosticDeviceType",
+        "en" : "In Vitro Diagnostic Device Type",
+        "ca" : "Tipus Dispositiu de Diagnòstic In Vitro"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices that are placed inside the human body and stay there after the procedure, such as joint replacements or heart valves."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableDeviceType",
+        "en" : "Implantable Device Type",
+        "ca" : "Tipus Dispositiu Implantable"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices that need an external energy source to work, such as imaging or monitoring equipment."
+      },
+      "labels" : {
+        "IRI-based" : "ActiveDeviceType",
+        "en" : "Active Device Type",
+        "ca" : "Tipus Dispositiu Actiu"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Category of medical devices that are both implantable and active, such as pacemakers or ventricular assist devices."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableActiveDeviceType",
+        "en" : "Implantable Active Device Type",
+        "ca" : "Tipus Dispositiu Actiu Implantable"
+      }
+    } ],
+    "comment" : {
+      "en" : "Closed enumeration of device type categories used to classify which devices a risk affects."
+    },
+    "id" : "88"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MalfunctionRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "en" : "Malfunction Risk",
+      "ca" : "Risc de mal funcionament"
+    },
+    "comment" : {
+      "en" : "Risk that the device fails or stops working correctly."
+    },
+    "attributes" : [ "external" ],
+    "id" : "89",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NearMissIncident",
+      "en" : "Near-Miss Incident",
+      "ca" : "Quasi-Incident"
+    },
+    "comment" : {
+      "en" : "An event that did not cause harm, but that could have been a serious incident."
+    },
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "6", "12", "2", "87" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "en" : "Injury Risk",
+      "ca" : "Risc de Lesió"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Risk of thrombus formation on the device surface, which can cause embolic events such as stroke. Critical for implantable cardiovascular devices."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-003",
+        "en" : "Thrombosis - device-related",
+        "ca" : "Trombosi relacionada amb el dispositiu"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk of physical harm to the patient caused by the device."
+    },
+    "attributes" : [ "external" ],
+    "id" : "97",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "en" : "Safety Alert",
+      "ca" : "Alerta de Seguretat"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Safety alert issued by Medtronic in February 2024 to all centres implanting HeartMate 3 LVAD. The alert updates the anticoagulation protocol to reduce device thrombosis risk."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "en" : "Safety Alert for HeartMate 3 LVAD anticoagulation",
+        "ca" : "Alerta de Seguretat per anticoagulació HeartMate 3 LVAD"
+      }
+    } ],
+    "comment" : {
+      "en" : "A message sent to users about a safety problem with a device."
+    },
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://schema.org/Country",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskCategory",
+      "en" : "Risk Category",
+      "ca" : "Categoria de Risc"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Risk category related to the general safety of the device."
+      },
+      "labels" : {
+        "IRI-based" : "DeviceSafety",
+        "en" : "Device Safety",
+        "ca" : "Seguretat del Dispositiu"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Risk category related to wrong diagnostic results."
+      },
+      "labels" : {
+        "IRI-based" : "DiagnosticError",
+        "en" : "Diagnostic Error",
+        "ca" : "Error de Diagnòstic"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Risk category related to physical harm to the patient."
+      },
+      "labels" : {
+        "IRI-based" : "PatientHarm",
+        "en" : "Patient Harm",
+        "ca" : "Dany al Pacient"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Risk category related to the device failing or stopping to work."
+      },
+      "labels" : {
+        "IRI-based" : "DeviceFailure",
+        "en" : "Device Failure",
+        "ca" : "Fallada del Dispositiu"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Risk category related to the performance of the device."
+      },
+      "labels" : {
+        "IRI-based" : "DevicePerformance",
+        "en" : "Device Performance",
+        "ca" : "Rendiment del Dispositiu"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Risk category related to the quality of the product."
+      },
+      "labels" : {
+        "IRI-based" : "ProductQuality",
+        "en" : "Product Quality",
+        "ca" : "Qualitat del Producte"
+      }
+    } ],
+    "comment" : {
+      "en" : "General classification of a risk. It can be device failure, patient harm, performance, safety, diagnostic error, or product quality."
+    },
+    "attributes" : [ "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident",
+      "ca" : "Incident"
+    },
+    "subClasses" : [ "60", "76" ],
+    "comment" : {
+      "en" : "An adverse event that happens with a medical device. Manufacturers must report incidents under MDR Article 87."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "en" : "Implantable Device",
+      "ca" : "Dispositiu Implantable"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Left ventricular assist device used for end-stage heart failure. It is a centrifugal-flow pump that supports cardiac function in patients waiting for a heart transplant or as a long-term solution."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD",
+        "ca" : "HeartMate 3 LVAD"
+      }
+    } ],
+    "comment" : {
+      "en" : "A medical device that is placed inside the human body and stays there after the procedure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk",
+      "ca" : "Risc"
+    },
+    "subClasses" : [ "82", "97", "69", "31", "106", "107", "108", "89", "109", "11" ],
+    "comment" : {
+      "en" : "A possible problem related to the use of a medical device. Each risk has a type, a category, a severity, and a probability."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReportingEntity",
+      "en" : "Reporting Entity",
+      "ca" : "Entitat Reportadora"
+    },
+    "subClasses" : [ "2", "87" ],
+    "comment" : {
+      "en" : "An agent that can report medical device incidents. It can be a manufacturer, an authority, a healthcare professional, or a patient."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CompetentAuthority",
+      "en" : "Competent Authority",
+      "ca" : "Autoritat Competent"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Health_Products_Regulatory_Authority",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "The Health Products Regulatory Authority is the competent authority for medical devices in Ireland."
+      },
+      "labels" : {
+        "IRI-based" : "HPRA",
+        "en" : "Health Products Regulatory Authority (HPRA)",
+        "ca" : "Autoritat Reguladora de Productes (HPRA)"
+      }
+    } ],
+    "comment" : {
+      "en" : "The national authority in each EU country responsible for medical device regulation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "87",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MaterialRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialRisk",
+      "en" : "Material Risk",
+      "ca" : "Risc de Materials"
+    },
+    "comment" : {
+      "en" : "Risk caused by the materials used in the device, such as toxicity or wear."
+    },
+    "attributes" : [ "external" ],
+    "id" : "108",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableActiveDevice",
+      "en" : "Implantable Active Device",
+      "ca" : "Dispositiu Actiu Implantable"
+    },
+    "intersection" : [ "37", "24" ],
+    "comment" : {
+      "en" : "A device that is both implantable and active. For example, a pacemaker."
+    },
+    "attributes" : [ "external", "intersection" ],
+    "id" : "36",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SoftwareRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareRisk",
+      "en" : "Software Risk",
+      "ca" : "Risc de Programari"
+    },
+    "comment" : {
+      "en" : "Risk caused by errors or bugs in the device software."
+    },
+    "attributes" : [ "external" ],
+    "id" : "109",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InfectionRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfectionRisk",
+      "en" : "Infection Risk",
+      "ca" : "Risc d'Infecció"
+    },
+    "comment" : {
+      "en" : "Risk of infection due to contamination or poor sterilization of the device."
+    },
+    "attributes" : [ "external" ],
+    "id" : "106",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "en" : "Active Device",
+      "ca" : "Dispositiu Actiu"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Left ventricular assist device used for end-stage heart failure. It is a centrifugal-flow pump that supports cardiac function in patients waiting for a heart transplant or as a long-term solution."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD",
+        "ca" : "HeartMate 3 LVAD"
+      }
+    } ],
+    "comment" : {
+      "en" : "A medical device that needs an electrical source or another type of energy to work."
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRRiskClass",
+      "en" : "MDR Risk Class",
+      "ca" : "Classe de Risc MDR"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "MDR risk class III. Highest risk for medical devices."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIII",
+        "en" : "Class III",
+        "ca" : "Classe III"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "MDR risk class I. Lowest risk for medical devices."
+      },
+      "labels" : {
+        "IRI-based" : "ClassI",
+        "en" : "Class I",
+        "ca" : "Classe I"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "MDR risk class IIa. Low to moderate risk for medical devices."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIa",
+        "en" : "Class IIa",
+        "ca" : "Classe IIa"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "MDR risk class IIb. Moderate to high risk for medical devices."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIb",
+        "en" : "Class IIb",
+        "ca" : "Classe IIb"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk class for devices under MDR. The possible values are I, IIa, IIb, or III."
+    },
+    "attributes" : [ "external" ],
+    "id" : "115",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Severity",
+      "en" : "Severity",
+      "ca" : "Gravetat"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Serious level of severity. The risk can cause important harm to the patient."
+      },
+      "labels" : {
+        "IRI-based" : "Serious",
+        "en" : "Serious",
+        "ca" : "Greu"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Critical level of severity. The risk can cause death or very serious harm."
+      },
+      "labels" : {
+        "IRI-based" : "Critical",
+        "en" : "Critical",
+        "ca" : "Crític"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Moderate level of severity. The risk can cause limited harm to the patient."
+      },
+      "labels" : {
+        "IRI-based" : "Moderate",
+        "en" : "Moderate",
+        "ca" : "Moderat"
+      }
+    } ],
+    "comment" : {
+      "en" : "Level of how serious a risk is. The possible values are Critical, Serious, or Moderate."
+    },
+    "attributes" : [ "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskClass",
+      "en" : "Risk Class",
+      "ca" : "Classe de Risc"
+    },
+    "subClasses" : [ "117", "115" ],
+    "comment" : {
+      "en" : "Regulatory class of a medical device by risk level. It is defined by MDR (I, IIa, IIb, III) or by IVDR (A, B, C, D)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegulatoryZone",
+      "en" : "Regulatory Zone",
+      "ca" : "Zona Regulatòria"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#EUWide",
+      "baseIri" : "http://www.uoc.edu/ontologies/eudamed-mdr-ivdr",
+      "comment" : {
+        "en" : "Regulatory zone covering all the European Union member states."
+      },
+      "labels" : {
+        "IRI-based" : "EUWide",
+        "en" : "EU-wide",
+        "ca" : "Tota la UE"
+      }
+    } ],
+    "comment" : {
+      "en" : "A group of countries where a corrective action applies. For example, EU-wide or EU-wide plus UK."
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sex",
+      "en" : "Sex",
+      "ca" : "Sexe"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Female patient."
+      },
+      "labels" : {
+        "IRI-based" : "Female",
+        "en" : "Female",
+        "ca" : "Dona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "Male patient."
+      },
+      "labels" : {
+        "IRI-based" : "Male",
+        "en" : "Male",
+        "ca" : "Home"
+      }
+    } ],
+    "comment" : {
+      "en" : "Sex of a patient involved in an incident. The possible values are Male or Female."
+    },
+    "attributes" : [ "external" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ContaminationRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContaminationRisk",
+      "en" : "Contamination Risk",
+      "ca" : "Risc de Contaminació"
+    },
+    "comment" : {
+      "en" : "Risk that the device or the patient gets contaminated."
+    },
+    "attributes" : [ "external" ],
+    "id" : "107",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SelfTestDevice",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelfTestDevice",
+      "en" : "Self-Test Device",
+      "ca" : "Dispositiu d'Autodiagnòstic"
+    },
+    "comment" : {
+      "en" : "An in vitro diagnostic device that people can use at home, without medical staff."
+    },
+    "attributes" : [ "external" ],
+    "id" : "111",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRRiskClass",
+      "en" : "IVDR Risk Class",
+      "ca" : "Classe de Risc IVDR"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "IVDR risk class D. Highest risk for in vitro diagnostic devices."
+      },
+      "labels" : {
+        "IRI-based" : "ClassD",
+        "en" : "Class D",
+        "ca" : "Classe D"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "IVDR risk class C. Moderate to high risk for in vitro diagnostic devices."
+      },
+      "labels" : {
+        "IRI-based" : "ClassC",
+        "en" : "Class C",
+        "ca" : "Classe C"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "IVDR risk class B. Low to moderate risk for in vitro diagnostic devices."
+      },
+      "labels" : {
+        "IRI-based" : "ClassB",
+        "en" : "Class B",
+        "ca" : "Classe B"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA",
+      "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+      "comment" : {
+        "en" : "IVDR risk class A. Lowest risk for in vitro diagnostic devices."
+      },
+      "labels" : {
+        "IRI-based" : "ClassA",
+        "en" : "Class A",
+        "ca" : "Classe A"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk class for in vitro diagnostic devices under IVDR. The possible values are A, B, C, or D."
+    },
+    "attributes" : [ "external" ],
+    "id" : "117",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "en" : "In Vitro Diagnostic Device",
+      "ca" : "Dispositiu de Diagnòstic In Vitro"
+    },
+    "subClasses" : [ "111" ],
+    "comment" : {
+      "en" : "A device used to analyse samples from the human body, such as blood or urine."
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "6" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasCountry",
+      "en" : "has country",
+      "ca" : "té país"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Connects a manufacturer to its country of registration."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "involvesDevice",
+      "en" : "involves device",
+      "ca" : "involucra dispositiu"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Connects an incident to the medical device involved."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "eudamedIncidentRef",
+      "en" : "EUDAMED incident reference",
+      "ca" : "referència d'incident a EUDAMED"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Reference number of the incident in EUDAMED."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "isIvd",
+      "en" : "is IVD",
+      "ca" : "és IVD"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "True if the device is for in vitro diagnostic use."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "19",
+    "subproperty" : [ "20" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "udiDi",
+      "en" : "UDI-DI",
+      "ca" : "UDI-DI"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Unique Device Identifier - Device Identifier. It is the unique code of a medical device under MDR."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "countryReported",
+      "en" : "country reported",
+      "ca" : "país on s'ha reportat"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Country where the incident was reported."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "outcome",
+      "en" : "outcome",
+      "ca" : "resultat"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Description of what happened as a result of the incident."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasRiskClass",
+      "en" : "has risk class",
+      "ca" : "té classe de risc"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "Connects a device to its regulatory risk class."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "52",
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "51"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "isImplantable",
+      "en" : "is implantable",
+      "ca" : "és implantable"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "True if the device is implantable inside the human body."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "58"
+  }, {
+    "range" : "5",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "62",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "devicesAffected",
+      "en" : "devices affected",
+      "ca" : "dispositius afectats"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Number of devices affected by the corrective action."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "status",
+      "en" : "status",
+      "ca" : "estat"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Current status of a corrective action. It can be Open or Closed."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "patientAge",
+      "en" : "patient age",
+      "ca" : "edat del pacient"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Age of the patient involved in the incident."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "countriesAffected",
+      "en" : "countries affected",
+      "ca" : "països afectats"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Geographic area affected by a corrective action. It can be a single country or a regulatory zone."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "affectedDeviceType",
+      "en" : "affected device type",
+      "ca" : "tipus de dispositiu afectat"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Connects a risk to the types of medical devices that it can affect."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "71"
+  }, {
+    "range" : "33",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "57",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "33",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "6",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "6",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "33",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "34",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "6",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "6",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "correctiveActionTaken",
+      "en" : "corrective action taken",
+      "ca" : "acció correctiva realitzada"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "True if a corrective action was taken after the incident."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "hasCompetentAuthority",
+      "en" : "has competent authority",
+      "ca" : "té autoritat competent"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Connects a manufacturer to its competent authority."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "eudamedFscaRef",
+      "en" : "EUDAMED FSCA reference",
+      "ca" : "referència FSCA a EUDAMED"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Reference number of the corrective action in EUDAMED."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "90"
+  }, {
+    "range" : "23",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "92"
+  }, {
+    "range" : "7",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "severity",
+      "en" : "severity",
+      "ca" : "gravetat"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Connects a risk to its severity level."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "imdrfCode",
+      "en" : "IMDRF code",
+      "ca" : "codi IMDRF"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Code from the IMDRF (International Medical Device Regulators Forum) used to classify the risk."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "closureDate",
+      "en" : "closure date",
+      "ca" : "data de tancament"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Date when the corrective action was closed."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasReportingEntity",
+      "en" : "has reporting entity",
+      "ca" : "té entitat reportadora"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Connects an incident to the entity that reported it."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "reportDate",
+      "en" : "report date",
+      "ca" : "data de report"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Date when the incident was reported."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "scope",
+      "en" : "scope",
+      "ca" : "abast"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Description of the scope of the corrective action, such as the affected lots or models."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "105"
+  }, {
+    "range" : "35",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "8",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "8",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "49",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "49",
+    "domain" : "117",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "12",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "12",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "12",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "addressesIncident",
+      "en" : "addresses incident",
+      "ca" : "tracta l'incident"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Connects a corrective action to the incident that it addresses."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "category",
+      "en" : "category",
+      "ca" : "categoria"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Connects a risk to its general category."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "123"
+  }, {
+    "range" : "12",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "12",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "12",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "12",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "5",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "12",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "12",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasRegulatoryFramework",
+      "en" : "has regulatory framework",
+      "ca" : "té marc regulatori"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Indicates the EU regulation that applies to a device. It can be MDR or IVDR."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "probability",
+      "en" : "probability",
+      "ca" : "probabilitat"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Connects a risk to its probability level."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "contactEmail",
+      "en" : "contact email",
+      "ca" : "correu de contacte"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Email address used to contact the manufacturer."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "133"
+  }, {
+    "range" : "35",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "38",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "64",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "65",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "64",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "65",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "en" : "has manufacturer",
+      "ca" : "té fabricant"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Connects a medical device to its manufacturer."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "140"
+  }, {
+    "range" : "65",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "actionDate",
+      "en" : "action date",
+      "ca" : "data de l'acció"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Date when the corrective action started."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "142"
+  }, {
+    "range" : "76",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "eventDate",
+      "en" : "event date",
+      "ca" : "data de l'esdeveniment"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Date when the incident happened."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "144"
+  }, {
+    "range" : "56",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "115",
+    "domain" : "117",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "eudamedSrn",
+      "en" : "EUDAMED SRN",
+      "ca" : "SRN d'EUDAMED"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Single Registration Number of the manufacturer in EUDAMED."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "materializesRisk",
+      "en" : "materializes risk",
+      "ca" : "materialitza risc"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Connects an incident to the risks that happened in it."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "150",
+    "label" : {
+      "IRI-based" : "patientSex",
+      "en" : "patient sex",
+      "ca" : "sexe del pacient"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Indicates the sex of the patient involved in the incident."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "authorizationNumber",
+      "en" : "authorization number",
+      "ca" : "número d'autorització"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Authorization number assigned to a manufacturer."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "detectionDate",
+      "en" : "detection date",
+      "ca" : "data de detecció"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Date when the incident was detected."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isReusable",
+      "en" : "is reusable",
+      "ca" : "és reutilitzable"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "True if the device can be used more than once."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "description",
+      "ca" : "descripció"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "Text description of the entity, such as a risk, an incident, or a corrective action."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "intendedPurpose",
+      "en" : "intended purpose",
+      "ca" : "ús previst"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "The use for which the manufacturer designed the device."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive",
+    "baseIri" : "http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isActive",
+      "en" : "is active",
+      "ca" : "és actiu"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "True if the device needs an external energy source to work."
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "156"
+  } ]
+}

@@ -1,0 +1,1506 @@
+@prefix : <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#> .
+
+<http://www.uoc.edu/ontologies/eudamed-mdr-ivdr> rdf:type owl:Ontology ;
+                                                  rdfs:label "EUDAMED MDR-IVDR Ontology"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> rdf:type owl:ObjectProperty ,
+                                                                                                    owl:FunctionalProperty ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                           rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                           rdfs:comment "Connects a corrective action to the incident that it addresses."@en ;
+                                                                                           rdfs:label "addresses incident"@en ,
+                                                                                                      "tracta l'incident"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                            rdfs:comment "Connects a risk to the types of medical devices that it can affect."@en ;
+                                                                                            rdfs:label "affected device type"@en ,
+                                                                                                       "tipus de dispositiu afectat"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> ;
+                                                                                  rdfs:comment "Connects a risk to its general category."@en ;
+                                                                                  rdfs:label "categoria"@ca ,
+                                                                                             "category"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                           rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> ;
+                                                                                           rdfs:comment "Geographic area affected by a corrective action. It can be a single country or a regulatory zone."@en ;
+                                                                                           rdfs:label "countries affected"@en ,
+                                                                                                      "països afectats"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> rdf:type owl:ObjectProperty ,
+                                                                                                  owl:FunctionalProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                         rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> ;
+                                                                                         rdfs:comment "Country where the incident was reported."@en ;
+                                                                                         rdfs:label "country reported"@en ,
+                                                                                                    "país on s'ha reportat"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> rdf:type owl:ObjectProperty ,
+                                                                                                        owl:FunctionalProperty ;
+                                                                                               rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> ;
+                                                                                               rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> ;
+                                                                                               rdfs:comment "Connects a manufacturer to its competent authority."@en ;
+                                                                                               rdfs:label "has competent authority"@en ,
+                                                                                                          "té autoritat competent"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> rdf:type owl:ObjectProperty ,
+                                                                                             owl:FunctionalProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> ;
+                                                                                    rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> ;
+                                                                                    rdfs:comment "Connects a manufacturer to its country of registration."@en ;
+                                                                                    rdfs:label "has country"@en ,
+                                                                                               "té país"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> rdf:type owl:ObjectProperty ,
+                                                                                                  owl:FunctionalProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                         rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> ;
+                                                                                         rdfs:comment "Connects a medical device to its manufacturer."@en ;
+                                                                                         rdfs:label "has manufacturer"@en ,
+                                                                                                    "té fabricant"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> rdf:type owl:ObjectProperty ,
+                                                                                                         owl:FunctionalProperty ;
+                                                                                                rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                                rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> ;
+                                                                                                rdfs:comment "Indicates the EU regulation that applies to a device. It can be MDR or IVDR."@en ;
+                                                                                                rdfs:label "has regulatory framework"@en ,
+                                                                                                           "té marc regulatori"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> rdf:type owl:ObjectProperty ,
+                                                                                                     owl:FunctionalProperty ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> ;
+                                                                                            rdfs:comment "Connects an incident to the entity that reported it."@en ;
+                                                                                            rdfs:label "has reporting entity"@en ,
+                                                                                                       "té entitat reportadora"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                      rdf:type owl:FunctionalProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                      rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> ;
+                                                                                      rdfs:comment "Connects a device to its regulatory risk class."@en ;
+                                                                                      rdfs:label "has risk class"@en ,
+                                                                                                 "té classe de risc"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                        rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                        rdfs:comment "Connects an incident to the medical device involved."@en ;
+                                                                                        rdfs:label "involucra dispositiu"@ca ,
+                                                                                                   "involves device"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk> rdf:type owl:ObjectProperty ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                          rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                          rdfs:comment "Connects an incident to the risks that happened in it."@en ;
+                                                                                          rdfs:label "materialitza risc"@ca ,
+                                                                                                     "materializes risk"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> rdf:type owl:ObjectProperty ,
+                                                                                             owl:FunctionalProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                    rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> ;
+                                                                                    rdfs:comment "Indicates the sex of the patient involved in the incident."@en ;
+                                                                                    rdfs:label "patient sex"@en ,
+                                                                                               "sexe del pacient"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> rdf:type owl:ObjectProperty ,
+                                                                                              owl:FunctionalProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                     rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> ;
+                                                                                     rdfs:comment "Connects a risk to its probability level."@en ;
+                                                                                     rdfs:label "probabilitat"@ca ,
+                                                                                                "probability"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> ;
+                                                                                  rdfs:comment "Connects a risk to its severity level."@en ;
+                                                                                  rdfs:label "gravetat"@ca ,
+                                                                                             "severity"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> rdf:type owl:ObjectProperty ,
+                                                                                         owl:FunctionalProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                rdfs:range <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> ;
+                                                                                rdfs:comment "Current status of a corrective action. It can be Open or Closed."@en ;
+                                                                                rdfs:label "estat"@ca ,
+                                                                                           "status"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> rdf:type owl:DatatypeProperty ,
+                                                                                             owl:FunctionalProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                    rdfs:range xsd:date ;
+                                                                                    rdfs:comment "Date when the corrective action started."@en ;
+                                                                                    rdfs:label "action date"@en ,
+                                                                                               "data de l'acció"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> rdf:type owl:DatatypeProperty ,
+                                                                                                      owl:FunctionalProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> ;
+                                                                                             rdfs:range xsd:string ;
+                                                                                             rdfs:comment "Authorization number assigned to a manufacturer."@en ;
+                                                                                             rdfs:label "authorization number"@en ,
+                                                                                                        "número d'autorització"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> rdf:type owl:DatatypeProperty ,
+                                                                                              owl:FunctionalProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                     rdfs:range xsd:date ;
+                                                                                     rdfs:comment "Date when the corrective action was closed."@en ;
+                                                                                     rdfs:label "closure date"@en ,
+                                                                                                "data de tancament"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> rdf:type owl:DatatypeProperty ,
+                                                                                               owl:FunctionalProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> ;
+                                                                                      rdfs:range xsd:string ;
+                                                                                      rdfs:comment "Email address used to contact the manufacturer."@en ;
+                                                                                      rdfs:label "contact email"@en ,
+                                                                                                 "correu de contacte"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> rdf:type owl:DatatypeProperty ;
+                                                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                               rdf:type owl:FunctionalProperty ;
+                                                                                               rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                               rdfs:range xsd:boolean ;
+                                                                                               rdfs:comment "True if a corrective action was taken after the incident."@en ;
+                                                                                               rdfs:label "acció correctiva realitzada"@ca ,
+                                                                                                          "corrective action taken"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> rdf:type owl:DatatypeProperty ,
+                                                                                              owl:FunctionalProperty ;
+                                                                                     rdfs:domain [ rdf:type owl:Class ;
+                                                                                                   owl:unionOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction>
+                                                                                                                 <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident>
+                                                                                                                 <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk>
+                                                                                                               )
+                                                                                                 ] ;
+                                                                                     rdfs:range xsd:string ;
+                                                                                     rdfs:comment "Text description of the entity, such as a risk, an incident, or a corrective action."@en ;
+                                                                                     rdfs:label "descripció"@ca ,
+                                                                                                "description"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> rdf:type owl:DatatypeProperty ,
+                                                                                                owl:FunctionalProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                       rdfs:range xsd:date ;
+                                                                                       rdfs:comment "Date when the incident was detected."@en ;
+                                                                                       rdfs:label "data de detecció"@ca ,
+                                                                                                  "detection date"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> rdf:type owl:DatatypeProperty ,
+                                                                                                  owl:FunctionalProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                         rdfs:range xsd:integer ;
+                                                                                         rdfs:comment "Number of devices affected by the corrective action."@en ;
+                                                                                         rdfs:label "devices affected"@en ,
+                                                                                                    "dispositius afectats"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> rdf:type owl:DatatypeProperty ,
+                                                                                                 owl:FunctionalProperty ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                        rdfs:range xsd:string ;
+                                                                                        rdfs:comment "Reference number of the corrective action in EUDAMED."@en ;
+                                                                                        rdfs:label "EUDAMED FSCA reference"@en ,
+                                                                                                   "referència FSCA a EUDAMED"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> rdf:type owl:DatatypeProperty ,
+                                                                                                     owl:FunctionalProperty ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                            rdfs:range xsd:string ;
+                                                                                            rdfs:comment "Reference number of the incident in EUDAMED."@en ;
+                                                                                            rdfs:label "EUDAMED incident reference"@en ,
+                                                                                                       "referència d'incident a EUDAMED"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> rdf:type owl:DatatypeProperty ,
+                                                                                             owl:FunctionalProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> ;
+                                                                                    rdfs:range xsd:string ;
+                                                                                    rdfs:comment "Single Registration Number of the manufacturer in EUDAMED."@en ;
+                                                                                    rdfs:label "EUDAMED SRN"@en ,
+                                                                                               "SRN d'EUDAMED"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> rdf:type owl:DatatypeProperty ,
+                                                                                            owl:FunctionalProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                   rdfs:range xsd:date ;
+                                                                                   rdfs:comment "Date when the incident happened."@en ;
+                                                                                   rdfs:label "data de l'esdeveniment"@ca ,
+                                                                                              "event date"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> rdf:type owl:DatatypeProperty ,
+                                                                                            owl:FunctionalProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                   rdfs:range xsd:string ;
+                                                                                   rdfs:comment "Code from the IMDRF (International Medical Device Regulators Forum) used to classify the risk."@en ;
+                                                                                   rdfs:label "IMDRF code"@en ,
+                                                                                              "codi IMDRF"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> rdf:type owl:DatatypeProperty ,
+                                                                                                  owl:FunctionalProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                         rdfs:range xsd:string ;
+                                                                                         rdfs:comment "The use for which the manufacturer designed the device."@en ;
+                                                                                         rdfs:label "intended purpose"@en ,
+                                                                                                    "ús previst"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> rdf:type owl:DatatypeProperty ,
+                                                                                           owl:FunctionalProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                  rdfs:range xsd:boolean ;
+                                                                                  rdfs:comment "True if the device needs an external energy source to work."@en ;
+                                                                                  rdfs:label "is active"@en ,
+                                                                                             "és actiu"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> rdf:type owl:DatatypeProperty ,
+                                                                                                owl:FunctionalProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                       rdfs:range xsd:boolean ;
+                                                                                       rdfs:comment "True if the device is implantable inside the human body."@en ;
+                                                                                       rdfs:label "is implantable"@en ,
+                                                                                                  "és implantable"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                                               rdf:type owl:FunctionalProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                               rdfs:range xsd:boolean ;
+                                                                               rdfs:comment "True if the device is for in vitro diagnostic use."@en ;
+                                                                               rdfs:label "is IVD"@en ,
+                                                                                          "és IVD"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> rdf:type owl:DatatypeProperty ,
+                                                                                             owl:FunctionalProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                    rdfs:range xsd:boolean ;
+                                                                                    rdfs:comment "True if the device can be used more than once."@en ;
+                                                                                    rdfs:label "is reusable"@en ,
+                                                                                               "és reutilitzable"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> rdf:type owl:DatatypeProperty ,
+                                                                                          owl:FunctionalProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                 rdfs:range xsd:string ;
+                                                                                 rdfs:comment "Description of what happened as a result of the incident."@en ;
+                                                                                 rdfs:label "outcome"@en ,
+                                                                                            "resultat"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> rdf:type owl:DatatypeProperty ,
+                                                                                             owl:FunctionalProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                    rdfs:range xsd:integer ;
+                                                                                    rdfs:comment "Age of the patient involved in the incident."@en ;
+                                                                                    rdfs:label "edat del pacient"@ca ,
+                                                                                               "patient age"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> rdf:type owl:DatatypeProperty ,
+                                                                                             owl:FunctionalProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                    rdfs:range xsd:date ;
+                                                                                    rdfs:comment "Date when the incident was reported."@en ;
+                                                                                    rdfs:label "data de report"@ca ,
+                                                                                               "report date"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> rdf:type owl:DatatypeProperty ,
+                                                                                        owl:FunctionalProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                               rdfs:range xsd:string ;
+                                                                               rdfs:comment "Description of the scope of the corrective action, such as the affected lots or models."@en ;
+                                                                               rdfs:label "abast"@ca ,
+                                                                                          "scope"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> rdf:type owl:DatatypeProperty ,
+                                                                                        owl:FunctionalProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                               rdfs:range xsd:string ;
+                                                                               rdfs:comment "Unique Device Identifier - Device Identifier. It is the unique code of a medical device under MDR."@en ;
+                                                                               rdfs:label "UDI-DI"@ca ,
+                                                                                          "UDI-DI"@en .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ,
+                                          owl:FunctionalProperty ;
+                                 rdfs:domain [ rdf:type owl:Class ;
+                                               owl:unionOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority>
+                                                             <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer>
+                                                             <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice>
+                                                             <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk>
+                                                           )
+                                             ] ;
+                                 rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.org/Country
+<http://schema.org/Country> rdf:type owl:Class .
+
+
+###  http://schema.org/MedicalDevice
+<http://schema.org/MedicalDevice> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> rdf:type owl:Class ;
+                                                                                      owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                            owl:oneOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed>
+                                                                                                                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open>
+                                                                                                                      )
+                                                                                                          ] ;
+                                                                                      rdfs:comment "Status of a corrective action. The possible values are Open or Closed."@en ;
+                                                                                      rdfs:label "Action Status"@en ,
+                                                                                                 "Estat de l'Acció"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                      rdfs:comment "A medical device that needs an electrical source or another type of energy to work."@en ;
+                                                                                      rdfs:label "Active Device"@en ,
+                                                                                                 "Dispositiu Actiu"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> rdf:type owl:Class ;
+                                                                                            rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> ;
+                                                                                            rdfs:comment "The national authority in each EU country responsible for medical device regulation."@en ;
+                                                                                            rdfs:label "Autoritat Competent"@ca ,
+                                                                                                       "Competent Authority"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ContaminationRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ContaminationRisk> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                           rdfs:comment "Risk that the device or the patient gets contaminated."@en ;
+                                                                                           rdfs:label "Contamination Risk"@en ,
+                                                                                                      "Risc de Contaminació"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> rdf:type owl:Class ;
+                                                                                          owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                owl:oneOf ( :ActiveDeviceType
+                                                                                                                            :ImplantableActiveDeviceType
+                                                                                                                            :ImplantableDeviceType
+                                                                                                                            :InVitroDiagnosticDeviceType
+                                                                                                                            :SelfTestDeviceType
+                                                                                                                            :SingleUseDeviceType
+                                                                                                                          )
+                                                                                                              ] ;
+                                                                                          rdfs:comment "A Field Safety Corrective Action. It is any action a manufacturer takes to reduce a risk, such as a recall, a safety alert, or a user notice."@en ;
+                                                                                          rdfs:label "Acció Correctiva (FSCA)"@ca ,
+                                                                                                     "Corrective Action (FSCA)"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://schema.org/Country> ,
+                                                                                                 <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> ;
+                                                                                 owl:disjointWith <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> ;
+                                                                                 rdfs:comment "A country, used to identify where manufacturers are registered or where incidents are reported."@en ;
+                                                                                 rdfs:label "Country"@en ,
+                                                                                            "País"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CybersecurityRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CybersecurityRisk> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                           rdfs:comment "Risk of unauthorized access or attacks on connected medical devices."@en ;
+                                                                                           rdfs:label "Cybersecurity Risk"@en ,
+                                                                                                      "Risc de Ciberseguretat"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticRisk> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                        rdfs:comment "Risk of wrong diagnostic results, such as false positives or false negatives."@en ;
+                                                                                        rdfs:label "Diagnostic Risk"@en ,
+                                                                                                   "Risc Diagnòstic"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> rdf:type owl:Class ;
+                                                                                         rdfs:comment "A general class for geographic areas. It includes both single countries and regulatory zones."@en ;
+                                                                                         rdfs:label "Geographic Scope"@en ,
+                                                                                                    "Àmbit Geogràfic"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> rdf:type owl:Class ;
+                                                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                             owl:oneOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA>
+                                                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB>
+                                                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC>
+                                                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD>
+                                                                                                                       )
+                                                                                                           ] ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> ;
+                                                                                       owl:disjointWith <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> ;
+                                                                                       rdfs:comment "Risk class for in vitro diagnostic devices under IVDR. The possible values are A, B, C, or D."@en ;
+                                                                                       rdfs:label "Classe de Risc IVDR"@ca ,
+                                                                                                  "IVDR Risk Class"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableActiveDevice> rdf:type owl:Class ;
+                                                                                                 owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice>
+                                                                                                                                            <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice>
+                                                                                                                                          ) ;
+                                                                                                                       rdf:type owl:Class
+                                                                                                                     ] ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                                 rdfs:comment "A device that is both implantable and active. For example, a pacemaker."@en ;
+                                                                                                 rdfs:label "Dispositiu Actiu Implantable"@ca ,
+                                                                                                            "Implantable Active Device"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> ;
+                                                                                           owl:disjointWith <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> ;
+                                                                                           rdfs:comment "A medical device that is placed inside the human body and stays there after the procedure."@en ;
+                                                                                           rdfs:label "Dispositiu Implantable"@ca ,
+                                                                                                      "Implantable Device"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                          rdfs:comment "A corrective action done on devices that are already in use, without removing them from the market."@en ;
+                                                                                          rdfs:label "Correcció In Situ"@ca ,
+                                                                                                     "In-Situ Correction"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                                 rdfs:comment "A device used to analyse samples from the human body, such as blood or urine."@en ;
+                                                                                                 rdfs:label "Dispositiu de Diagnòstic In Vitro"@ca ,
+                                                                                                            "In Vitro Diagnostic Device"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> rdf:type owl:Class ;
+                                                                                  rdfs:comment "An adverse event that happens with a medical device. Manufacturers must report incidents under MDR Article 87."@en ;
+                                                                                  rdfs:label "Incident"@ca ,
+                                                                                             "Incident"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InfectionRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InfectionRisk> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                       rdfs:comment "Risk of infection due to contamination or poor sterilization of the device."@en ;
+                                                                                       rdfs:label "Infection Risk"@en ,
+                                                                                                  "Risc d'Infecció"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                    rdfs:comment "Risk of physical harm to the patient caused by the device."@en ;
+                                                                                    rdfs:label "Injury Risk"@en ,
+                                                                                               "Risc de Lesió"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InterferenceRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InterferenceRisk> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                          rdfs:comment "Risk that the device gets disturbed by other devices, or that it disturbs other devices."@en ;
+                                                                                          rdfs:label "Interference Risk"@en ,
+                                                                                                     "Risc d'Interferència"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> rdf:type owl:Class ;
+                                                                                      owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                            owl:oneOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI>
+                                                                                                                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII>
+                                                                                                                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa>
+                                                                                                                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb>
+                                                                                                                      )
+                                                                                                          ] ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> ;
+                                                                                      rdfs:comment "Risk class for devices under MDR. The possible values are I, IIa, IIb, or III."@en ;
+                                                                                      rdfs:label "Classe de Risc MDR"@ca ,
+                                                                                                 "MDR Risk Class"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MalfunctionRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MalfunctionRisk> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                         rdfs:comment "Risk that the device fails or stops working correctly."@en ;
+                                                                                         rdfs:label "Malfunction Risk"@en ,
+                                                                                                    "Risc de mal funcionament"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> ;
+                                                                                      rdfs:comment "A company or person that designs and produces medical devices. Manufacturers must register their devices in EUDAMED."@en ;
+                                                                                      rdfs:label "Fabricant"@ca ,
+                                                                                                 "Manufacturer"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MaterialRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MaterialRisk> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                      rdfs:comment "Risk caused by the materials used in the device, such as toxicity or wear."@en ;
+                                                                                      rdfs:label "Material Risk"@en ,
+                                                                                                 "Risc de Materials"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://schema.org/MedicalDevice> ;
+                                                                                       rdfs:comment "A device used for medical purposes such as diagnosis, prevention, or treatment."@en ;
+                                                                                       rdfs:label "Dispositiu Mèdic"@ca ,
+                                                                                                  "Medical Device"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/NearMissIncident> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                          owl:disjointWith <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> ;
+                                                                                          rdfs:comment "An event that did not cause harm, but that could have been a serious incident."@en ;
+                                                                                          rdfs:label "Near-Miss Incident"@en ,
+                                                                                                     "Quasi-Incident"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> rdf:type owl:Class ;
+                                                                                     owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                           owl:oneOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High>
+                                                                                                                       <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low>
+                                                                                                                       <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium>
+                                                                                                                     )
+                                                                                                         ] ;
+                                                                                     rdfs:comment "How likely a risk is to happen. The possible values are Low, Medium, or High."@en ;
+                                                                                     rdfs:label "Probabilitat"@ca ,
+                                                                                                "Probability"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RadiationRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RadiationRisk> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                       rdfs:comment "Risk caused by radiation that comes from the device."@en ;
+                                                                                       rdfs:label "Radiation Risk"@en ,
+                                                                                                  "Risc de Radiació"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                rdfs:comment "A corrective action where the affected devices are removed from the market."@en ;
+                                                                                rdfs:label "Recall"@en ,
+                                                                                           "Retirada del Mercat"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> rdf:type owl:Class ;
+                                                                                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                   owl:oneOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR>
+                                                                                                                               <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR>
+                                                                                                                             )
+                                                                                                                 ] ;
+                                                                                             rdfs:comment "The European regulation that controls a medical device. It can be MDR or IVDR."@en ;
+                                                                                             rdfs:label "Marc Regulatori"@ca ,
+                                                                                                        "Regulatory Framework"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/GeographicScope> ;
+                                                                                        rdfs:comment "A group of countries where a corrective action applies. For example, EU-wide or EU-wide plus UK."@en ;
+                                                                                        rdfs:label "Regulatory Zone"@en ,
+                                                                                                   "Zona Regulatòria"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ReportingEntity> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                                         rdfs:comment "An agent that can report medical device incidents. It can be a manufacturer, an authority, a healthcare professional, or a patient."@en ;
+                                                                                         rdfs:label "Entitat Reportadora"@ca ,
+                                                                                                    "Reporting Entity"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> rdf:type owl:Class ;
+                                                                              rdfs:comment "A possible problem related to the use of a medical device. Each risk has a type, a category, a severity, and a probability."@en ;
+                                                                              rdfs:label "Risc"@ca ,
+                                                                                         "Risk"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> rdf:type owl:Class ;
+                                                                                      owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                            owl:oneOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure>
+                                                                                                                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance>
+                                                                                                                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety>
+                                                                                                                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError>
+                                                                                                                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm>
+                                                                                                                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality>
+                                                                                                                      )
+                                                                                                          ] ;
+                                                                                      rdfs:comment "General classification of a risk. It can be device failure, patient harm, performance, safety, diagnostic error, or product quality."@en ;
+                                                                                      rdfs:label "Categoria de Risc"@ca ,
+                                                                                                 "Risk Category"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskClass> rdf:type owl:Class ;
+                                                                                   rdfs:comment "Regulatory class of a medical device by risk level. It is defined by MDR (I, IIa, IIb, III) or by IVDR (A, B, C, D)."@en ;
+                                                                                   rdfs:label "Classe de Risc"@ca ,
+                                                                                              "Risk Class"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                     rdfs:comment "A message sent to users about a safety problem with a device."@en ;
+                                                                                     rdfs:label "Alerta de Seguretat"@ca ,
+                                                                                                "Safety Alert"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SelfTestDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SelfTestDevice> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> ;
+                                                                                        rdfs:comment "An in vitro diagnostic device that people can use at home, without medical staff."@en ;
+                                                                                        rdfs:label "Dispositiu d'Autodiagnòstic"@ca ,
+                                                                                                   "Self-Test Device"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Incident> ;
+                                                                                         rdfs:comment "An incident that caused or could cause death or serious health problems."@en ;
+                                                                                         rdfs:label "Incident Greu"@ca ,
+                                                                                                    "Serious Incident"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> rdf:type owl:Class ;
+                                                                                  owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                        owl:oneOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical>
+                                                                                                                    <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate>
+                                                                                                                    <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious>
+                                                                                                                  )
+                                                                                                      ] ;
+                                                                                  rdfs:comment "Level of how serious a risk is. The possible values are Critical, Serious, or Moderate."@en ;
+                                                                                  rdfs:label "Gravetat"@ca ,
+                                                                                             "Severity"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> rdf:type owl:Class ;
+                                                                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                   owl:oneOf ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female>
+                                                                                                               <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male>
+                                                                                                             )
+                                                                                                 ] ;
+                                                                             rdfs:comment "Sex of a patient involved in an incident. The possible values are Male or Female."@en ;
+                                                                             rdfs:label "Sex"@en ,
+                                                                                        "Sexe"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                                                         rdfs:comment "A medical device used only once on a single patient. Implantable devices are also single-use."@en ;
+                                                                                         rdfs:label "Dispositiu d'un Sol Ús"@ca ,
+                                                                                                    "Single-Use Device"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SoftwareRisk
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SoftwareRisk> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Risk> ;
+                                                                                      rdfs:comment "Risk caused by errors or bugs in the device software."@en ;
+                                                                                      rdfs:label "Risc de Programari"@ca ,
+                                                                                                 "Software Risk"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                                                    rdfs:comment "A notice sent to users with instructions on how to use or limit the device."@en ;
+                                                                                    rdfs:label "Avís a Usuaris"@ca ,
+                                                                                               "User Notice"@en .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MedicalDeviceType
+:MedicalDeviceType rdf:type owl:Class ;
+                   rdfs:comment "Closed enumeration of device type categories used to classify which devices a risk affects."@en ;
+                   rdfs:label "Medical Device Type"@en ,
+                              "Tipus de Dispositius mèdics"@ca .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> ;
+                                                                                rdfs:comment "IVDR risk class A. Lowest risk for in vitro diagnostic devices."@en ;
+                                                                                rdfs:label "Class A"@en ,
+                                                                                           "Classe A"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> ;
+                                                                                rdfs:comment "IVDR risk class B. Low to moderate risk for in vitro diagnostic devices."@en ;
+                                                                                rdfs:label "Class B"@en ,
+                                                                                           "Classe B"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> ;
+                                                                                rdfs:comment "IVDR risk class C. Moderate to high risk for in vitro diagnostic devices."@en ;
+                                                                                rdfs:label "Class C"@en ,
+                                                                                           "Classe C"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDRRiskClass> ;
+                                                                                rdfs:comment "IVDR risk class D. Highest risk for in vitro diagnostic devices."@en ;
+                                                                                rdfs:label "Class D"@en ,
+                                                                                           "Classe D"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> ;
+                                                                                rdfs:comment "MDR risk class I. Lowest risk for medical devices."@en ;
+                                                                                rdfs:label "Class I"@en ,
+                                                                                           "Classe I"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> ;
+                                                                                  rdfs:comment "MDR risk class III. Highest risk for medical devices."@en ;
+                                                                                  rdfs:label "Class III"@en ,
+                                                                                             "Classe III"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> ;
+                                                                                  rdfs:comment "MDR risk class IIa. Low to moderate risk for medical devices."@en ;
+                                                                                  rdfs:label "Class IIa"@en ,
+                                                                                             "Classe IIa"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDRRiskClass> ;
+                                                                                  rdfs:comment "MDR risk class IIb. Moderate to high risk for medical devices."@en ;
+                                                                                  rdfs:label "Class IIb"@en ,
+                                                                                             "Classe IIb"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> ;
+                                                                                rdfs:comment "The corrective action has been completed."@en ;
+                                                                                rdfs:label "Closed"@en ,
+                                                                                           "Tancat"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> ;
+                                                                                  rdfs:comment "Critical level of severity. The risk can cause death or very serious harm."@en ;
+                                                                                  rdfs:label "Critical"@en ,
+                                                                                             "Crític"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> ;
+                                                                                       rdfs:comment "Risk category related to the device failing or stopping to work."@en ;
+                                                                                       rdfs:label "Device Failure"@en ,
+                                                                                                  "Fallada del Dispositiu"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> ;
+                                                                                           rdfs:comment "Risk category related to the performance of the device."@en ;
+                                                                                           rdfs:label "Device Performance"@en ,
+                                                                                                      "Rendiment del Dispositiu"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> ;
+                                                                                      rdfs:comment "Risk category related to the general safety of the device."@en ;
+                                                                                      rdfs:label "Device Safety"@en ,
+                                                                                                 "Seguretat del Dispositiu"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> ;
+                                                                                         rdfs:comment "Risk category related to wrong diagnostic results."@en ;
+                                                                                         rdfs:label "Diagnostic Error"@en ,
+                                                                                                    "Error de Diagnòstic"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> ;
+                                                                                rdfs:comment "Female patient."@en ;
+                                                                                rdfs:label "Dona"@ca ,
+                                                                                           "Female"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> ;
+                                                                              rdfs:comment "High probability that the risk happens."@en ;
+                                                                              rdfs:label "Alta"@ca ,
+                                                                                         "High"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> ;
+                                                                              rdfs:comment "In Vitro Diagnostic Regulation (EU) 2017/746."@en ;
+                                                                              rdfs:label "IVDR"@ca ,
+                                                                                         "IVDR"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> ;
+                                                                             rdfs:comment "Low probability that the risk happens."@en ;
+                                                                             rdfs:label "Baixa"@ca ,
+                                                                                        "Low"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryFramework> ;
+                                                                             rdfs:comment "Medical Device Regulation (EU) 2017/745."@en ;
+                                                                             rdfs:label "MDR"@ca ,
+                                                                                        "MDR"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Sex> ;
+                                                                              rdfs:comment "Male patient."@en ;
+                                                                              rdfs:label "Home"@ca ,
+                                                                                         "Male"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Probability> ;
+                                                                                rdfs:comment "Medium probability that the risk happens."@en ;
+                                                                                rdfs:label "Medium"@en ,
+                                                                                           "Mitjana"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> ;
+                                                                                  rdfs:comment "Moderate level of severity. The risk can cause limited harm to the patient."@en ;
+                                                                                  rdfs:label "Moderat"@ca ,
+                                                                                             "Moderate"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActionStatus> ;
+                                                                              rdfs:comment "The corrective action is still in progress."@en ;
+                                                                              rdfs:label "Obert"@ca ,
+                                                                                         "Open"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> ;
+                                                                                     rdfs:comment "Risk category related to physical harm to the patient."@en ;
+                                                                                     rdfs:label "Dany al Pacient"@ca ,
+                                                                                                "Patient Harm"@en .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RiskCategory> ;
+                                                                                        rdfs:comment "Risk category related to the quality of the product."@en ;
+                                                                                        rdfs:label "Product Quality"@en ,
+                                                                                                   "Qualitat del Producte"@ca .
+
+
+###  http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious
+<http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Severity> ;
+                                                                                 rdfs:comment "Serious level of severity. The risk can cause important harm to the patient."@en ;
+                                                                                 rdfs:label "Greu"@ca ,
+                                                                                            "Serious"@en .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ActiveDeviceType
+:ActiveDeviceType rdf:type owl:NamedIndividual ,
+                           :MedicalDeviceType ;
+                  rdfs:comment "Category of medical devices that need an external energy source to work, such as imaging or monitoring equipment."@en ;
+                  rdfs:label "Active Device Type"@en ,
+                             "Tipus Dispositiu Actiu"@ca .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#DEV-001
+:DEV-001 rdf:type owl:NamedIndividual ,
+                  <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> ,
+                  <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasManufacturer> :MAN-001 ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRiskClass> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/intendedPurpose> "Ventricular assist device for end-stage heart failure" ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> "true"^^xsd:boolean ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> "true"^^xsd:boolean ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> "false"^^xsd:boolean ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> "false"^^xsd:boolean ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/udiDi> "(01)00380740009095" ;
+         <http://xmlns.com/foaf/0.1/name> "HeartMate 3 LVAD" ;
+         rdfs:comment "Left ventricular assist device used for end-stage heart failure. It is a centrifugal-flow pump that supports cardiac function in patients waiting for a heart transplant or as a long-term solution."@en ;
+         rdfs:label "HeartMate 3 LVAD"@ca ,
+                    "HeartMate 3 LVAD"@en .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#EUWide
+:EUWide rdf:type owl:NamedIndividual ,
+                 <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/RegulatoryZone> ;
+        rdfs:comment "Regulatory zone covering all the European Union member states."@en ;
+        rdfs:label "EU-wide"@en ,
+                   "Tota la UE"@ca .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#FSCA-001
+:FSCA-001 rdf:type owl:NamedIndividual ,
+                   <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert> ;
+          <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/addressesIncident> :INC-001 ;
+          <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countriesAffected> :EUWide ;
+          <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open> ;
+          <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/actionDate> "2024-02-01"^^xsd:date ;
+          <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0." ;
+          <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/devicesAffected> 850 ;
+          <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedFscaRef> "EU-FSCA-2024-000001" ;
+          <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/scope> "All HeartMate 3 LVAD units implanted since 2020" ;
+          rdfs:comment "Safety alert issued by Medtronic in February 2024 to all centres implanting HeartMate 3 LVAD. The alert updates the anticoagulation protocol to reduce device thrombosis risk."@en ;
+          rdfs:label "Alerta de Seguretat per anticoagulació HeartMate 3 LVAD"@ca ,
+                     "Safety Alert for HeartMate 3 LVAD anticoagulation"@en .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> ;
+         rdfs:comment "Country in Central Europe. Member State of the European Union."@en ;
+         rdfs:label "Alemanya"@ca ,
+                    "Germany"@en ;
+         owl:sameAs "http://dbpedia.org/resource/Germany" .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#HPRA
+:HPRA rdf:type owl:NamedIndividual ,
+               <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CompetentAuthority> ;
+      rdfs:comment "The Health Products Regulatory Authority is the competent authority for medical devices in Ireland."@en ;
+      rdfs:label "Autoritat Reguladora de Productes (HPRA)"@ca ,
+                 "Health Products Regulatory Authority (HPRA)"@en ;
+      owl:sameAs "http://dbpedia.org/resource/Health_Products_Regulatory_Authority" .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#INC-001
+:INC-001 rdf:type owl:NamedIndividual ,
+                  <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SeriousIncident> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/countryReported> :Germany ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasReportingEntity> :MAN-001 ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/involvesDevice> :DEV-001 ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/materializesRisk> :RSK-003 ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientSex> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/correctiveActionTaken> "true"^^xsd:boolean ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography." ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/detectionDate> "2024-01-10"^^xsd:date ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedIncidentRef> "EU-INC-2024-000001" ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eventDate> "2024-01-08"^^xsd:date ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/outcome> "Serious patient injury - embolic stroke" ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/patientAge> 58 ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/reportDate> "2024-01-15"^^xsd:date ;
+         rdfs:comment "Serious incident reported in Germany in January 2024. A patient implanted with a HeartMate 3 LVAD developed an ischemic stroke six months after implantation. Device thrombus was confirmed by echocardiography."@en ;
+         rdfs:label "Incident d'ictus amb HeartMate 3 LVAD."@ca ,
+                    "Stroke incident with HeartMate 3 LVAD."@en .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableActiveDeviceType
+:ImplantableActiveDeviceType rdf:type owl:NamedIndividual ,
+                                      :MedicalDeviceType ;
+                             rdfs:comment "Category of medical devices that are both implantable and active, such as pacemakers or ventricular assist devices."@en ;
+                             rdfs:label "Implantable Active Device Type"@en ,
+                                        "Tipus Dispositiu Actiu Implantable"@ca .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#ImplantableDeviceType
+:ImplantableDeviceType rdf:type owl:NamedIndividual ,
+                                :MedicalDeviceType ;
+                       rdfs:comment "Category of medical devices that are placed inside the human body and stay there after the procedure, such as joint replacements or heart valves."@en ;
+                       rdfs:label "Implantable Device Type"@en ,
+                                  "Tipus Dispositiu Implantable"@ca .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDeviceType
+:InVitroDiagnosticDeviceType rdf:type owl:NamedIndividual ,
+                                      :MedicalDeviceType ;
+                             rdfs:comment "Category of medical devices used to analyse samples from the human body, such as blood, urine, or tissue."@en ;
+                             rdfs:label "In Vitro Diagnostic Device Type"@en ,
+                                        "Tipus Dispositiu de Diagnòstic In Vitro"@ca .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#Ireland
+:Ireland rdf:type owl:NamedIndividual ,
+                  <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Country> ;
+         rdfs:comment "Country in Western Europe. Member State of the European Union."@en ;
+         rdfs:label "Ireland"@en ,
+                    "Irlanda"@ca ;
+         owl:sameAs "http://dbpedia.org/resource/Ireland" .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#MAN-001
+:MAN-001 rdf:type owl:NamedIndividual ,
+                  <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Manufacturer> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCompetentAuthority> :HPRA ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasCountry> :Ireland ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/authorizationNumber> "IE/2017/001234" ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/contactEmail> "regulatory@medtronic.com" ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/eudamedSrn> "SRN-IE-MED-0001" ;
+         <http://xmlns.com/foaf/0.1/name> "Medtronic plc" ;
+         rdfs:comment "Irish-American medical device company headquartered in Dublin. One of the largest medical device manufacturers in the world."@en ;
+         rdfs:label "Medtronic plc"@ca ,
+                    "Medtronic plc"@en ;
+         owl:sameAs "http://dbpedia.org/resource/Medtronic" .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#RSK-003
+:RSK-003 rdf:type owl:NamedIndividual ,
+                  <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InjuryRisk> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/affectedDeviceType> :ImplantableActiveDeviceType ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/category> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/probability> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/severity> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical> ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/description> "Thrombus formation on device surface causing embolic events" ;
+         <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/imdrfCode> "A0201" ;
+         <http://xmlns.com/foaf/0.1/name> "Thrombosis - device-related" ;
+         rdfs:comment "Risk of thrombus formation on the device surface, which can cause embolic events such as stroke. Critical for implantable cardiovascular devices."@en ;
+         rdfs:label "Thrombosis - device-related"@en ,
+                    "Trombosi relacionada amb el dispositiu"@ca .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SelfTestDeviceType
+:SelfTestDeviceType rdf:type owl:NamedIndividual ,
+                             :MedicalDeviceType ;
+                    rdfs:comment "Category of in vitro diagnostic devices that people can use at home, without medical staff, such as glucose monitors."@en ;
+                    rdfs:label "Self-Test Device Type"@en ,
+                               "Tipus Dispositiu d'Autodiagnòstic"@ca .
+
+
+###  http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#SingleUseDeviceType
+:SingleUseDeviceType rdf:type owl:NamedIndividual ,
+                              :MedicalDeviceType ;
+                     rdfs:comment "Category of medical devices used only once on a single patient, such as drug-eluting balloons or disposable instruments."@en ;
+                     rdfs:label "Single-Use Device Type"@en ,
+                                "Tipus Dispositiu d'un Sol Ús"@ca .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InSituCorrection>
+                <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Recall>
+                <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SafetyAlert>
+                <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/UserNotice>
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassA>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassB>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassC>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassD>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassI>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIII>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIa>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ClassIIb>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Open>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Critical>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Moderate>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Serious>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceFailure>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DevicePerformance>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DeviceSafety>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/DiagnosticError>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/PatientHarm>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ProductQuality>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Female>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Male>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/High>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Low>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Medium>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR>
+                        <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :ActiveDeviceType
+                        :ImplantableActiveDeviceType
+                        :ImplantableDeviceType
+                        :InVitroDiagnosticDeviceType
+                        :SelfTestDeviceType
+                        :SingleUseDeviceType
+                      )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#date> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdfs:comment "Marks a corrective action as Closed when it has a closure date."@en ;
+   rdfs:label "CorrectiveAction Status by closureDate"@en ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/CorrectiveAction> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/closureDate> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#date>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/status> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/Closed>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "Assigns MDR regulatory framework to devices that are not in vitro diagnostic."@en ;
+   rdfs:label "MedicalDevice RegulatoryFramework by isIvd"@en ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "false"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MDR>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "Classifies a device as SingleUseDevice when isReusable is false."@en ;
+   rdfs:label "MedicalDevice Type by isReusable"@en ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isReusable> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "false"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/SingleUseDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "Classifies a device as ActiveDevice when isActive is true."@en ;
+   rdfs:label "MedicalDevice Type by isActive"@en ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isActive> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ActiveDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "Classifies a device as ImplantableDevice when isImplantable is true."@en ;
+   rdfs:label "MedicalDevice Type by isImplantable"@en ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isImplantable> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/ImplantableDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "Classifies a device as InVitroDiagnosticDevice and assigns IVDR regulatory framework when isIvd is true."@en ;
+   rdfs:label "MedicalDevice Type and RegulatoryFramework by isIvd"@en ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/MedicalDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/isIvd> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/InVitroDiagnosticDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/hasRegulatoryFramework> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/issoc/ontologies/2026/3/untitled-ontology-9/IVDR>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
