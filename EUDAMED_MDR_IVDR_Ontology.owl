@@ -11,10 +11,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:bibo1="http://purl.org/ontology/bibo/status#bibo:"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:vann2="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#vann:"
      xmlns:schema1="http://schema.org/"
      xmlns:eudamed-mdr-ivdr="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#">
     <owl:Ontology rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr">
@@ -28,9 +26,9 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-27</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:publisher xml:lang="en">Universitat Oberta de Catalunya (UOC)</terms:publisher>
-        <bibo1:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
-        <vann2:preferredNamespacePrefix>eudamed</vann2:preferredNamespacePrefix>
-        <vann2:preferredNamespaceUri>http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#</vann2:preferredNamespaceUri>
+        <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
+        <vann:preferredNamespacePrefix>eudamed</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="en">EUDAMED MDR-IVDR Ontology</rdfs:label>
         <rdfs:label>eudamed</rdfs:label>
         <owl:versionInfo>1.0.0</owl:versionInfo>
@@ -122,25 +120,25 @@
     
 
 
-    <!-- http://purl.org/ontology/bibo/status#bibo:status -->
+    <!-- http://purl.org/ontology/bibo/status -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status#bibo:status">
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#vann:preferredNamespacePrefix -->
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
-    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#vann:preferredNamespacePrefix">
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#vann:preferredNamespaceUri -->
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
-    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/ontologies/eudamed-mdr-ivdr#vann:preferredNamespaceUri">
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
